@@ -1,0 +1,2728 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="/script.js"></script>
+
+<nav class="navbar">
+    <ul>
+        <li>
+            <a href="#heropool">
+                武将池
+            </a>
+        </li>
+        <li>
+            <a href="#skillpool">
+                战法池
+            </a>
+        </li>
+    </ul>
+</nav>
+<table>
+    <tbody>
+        <thead>
+            <tr>
+                <th id="descrption">战法/武将</th>
+                <th id="position">大营</th>
+                <th id="position">中军</th>
+                <th id="position">前锋</th>
+            </tr>
+            <tr>
+                <th id="team">队伍1</th>
+                <th id="hero-group">
+                    <div class="heroselection">
+                        <select id="hero-select_1">
+                            <option value="" id="choose">-选择大营-</option>
+                            <optgroup label="步兵" id="category"></optgroup>
+                            <option value="1">贾诩((群)</option>
+                            <option value="2">妲己</option>
+                            <option value="3">孟获</option>
+                            <option value="4">袁绍(汉)</option>
+                            <option value="5">刘备</option>
+                            <option value="6">赵云</option>
+                            <option value="7">庞统</option>
+                            <option value="8">黄忠</option>
+                            <option value="9">魏延</option>
+                            <option value="10">荀攸</option>
+                            <option value="11">司马懿</option>
+                            <option value="12">郝昭</option>
+                            <option value="13">张郃</option>
+                            <option value="14">黄盖</option>
+                            </optgroup>
+                            <optgroup label="骑兵" id="category"></optgroup>
+                            <option value="15">马超(赛季)</option>
+                            <option value="16">华雄</option>
+                            <option value="17">张角</option>
+                            <option value="18">马云禄</option>
+                            <option value="19">祝融夫人</option>
+                            <option value="20">张飞</option>
+                            <option value="21">徐庶</option>
+                            <option value="22">法正</option>
+                            <option value="23">张辽</option>
+                            <option value="24">曹操</option>
+                            <option value="25">荀彧</option>
+                            <option value="26">曹纯</option>
+                            <option value="27">郭嘉</option>
+                            </optgroup>
+                            <optgroup label="弓兵" id="category"></optgroup>
+                            <option value="28">吕布(群)</option>
+                            <option value="29">甄洛(群)</option>
+                            <option value="30">陈宫(群)</option>
+                            <option value="31">灵帝</option>
+                            <option value="32">诸葛亮</option>
+                            <option value="33">张春华</option>
+                            <option value="34">王朗</option>
+                            <option value="35">太史慈</option>
+                            <option value="36">孙权</option>
+                            <option value="37">吕蒙</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+                <th id="hero-group">
+                    <div class="heroselection">
+                        <select id="hero-select_1">
+                            <option value="" id="choose">-选择中军-</option>
+                            <optgroup label="步兵" id="category"></optgroup>
+                            <option value="1">贾诩((群)</option>
+                            <option value="2">妲己</option>
+                            <option value="3">孟获</option>
+                            <option value="4">袁绍(汉)</option>
+                            <option value="5">刘备</option>
+                            <option value="6">赵云</option>
+                            <option value="7">庞统</option>
+                            <option value="8">黄忠</option>
+                            <option value="9">魏延</option>
+                            <option value="10">荀攸</option>
+                            <option value="11">司马懿</option>
+                            <option value="12">郝昭</option>
+                            <option value="13">张郃</option>
+                            <option value="14">黄盖</option>
+                            </optgroup>
+                            <optgroup label="骑兵" id="category"></optgroup>
+                            <option value="15">马超(赛季)</option>
+                            <option value="16">华雄</option>
+                            <option value="17">张角</option>
+                            <option value="18">马云禄</option>
+                            <option value="19">祝融夫人</option>
+                            <option value="20">张飞</option>
+                            <option value="21">徐庶</option>
+                            <option value="22">法正</option>
+                            <option value="23">张辽</option>
+                            <option value="24">曹操</option>
+                            <option value="25">荀彧</option>
+                            <option value="26">曹纯</option>
+                            <option value="27">郭嘉</option>
+                            </optgroup>
+                            <optgroup label="弓兵" id="category"></optgroup>
+                            <option value="28">吕布(群)</option>
+                            <option value="29">甄洛(群)</option>
+                            <option value="30">陈宫(群)</option>
+                            <option value="31">灵帝</option>
+                            <option value="32">诸葛亮</option>
+                            <option value="33">张春华</option>
+                            <option value="34">王朗</option>
+                            <option value="35">太史慈</option>
+                            <option value="36">孙权</option>
+                            <option value="37">吕蒙</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+                <th id="hero-group">
+                    <div class="heroselection">
+                        <select id="hero-select_1">
+                            <option value="" id="choose">-选择前锋-</option>
+                            <optgroup label="步兵" id="category"></optgroup>
+                            <option value="1">贾诩((群)</option>
+                            <option value="2">妲己</option>
+                            <option value="3">孟获</option>
+                            <option value="4">袁绍(汉)</option>
+                            <option value="5">刘备</option>
+                            <option value="6">赵云</option>
+                            <option value="7">庞统</option>
+                            <option value="8">黄忠</option>
+                            <option value="9">魏延</option>
+                            <option value="10">荀攸</option>
+                            <option value="11">司马懿</option>
+                            <option value="12">郝昭</option>
+                            <option value="13">张郃</option>
+                            <option value="14">黄盖</option>
+                            </optgroup>
+                            <optgroup label="骑兵" id="category"></optgroup>
+                            <option value="15">马超(赛季)</option>
+                            <option value="16">华雄</option>
+                            <option value="17">张角</option>
+                            <option value="18">马云禄</option>
+                            <option value="19">祝融夫人</option>
+                            <option value="20">张飞</option>
+                            <option value="21">徐庶</option>
+                            <option value="22">法正</option>
+                            <option value="23">张辽</option>
+                            <option value="24">曹操</option>
+                            <option value="25">荀彧</option>
+                            <option value="26">曹纯</option>
+                            <option value="27">郭嘉</option>
+                            </optgroup>
+                            <optgroup label="弓兵" id="category"></optgroup>
+                            <option value="28">吕布(群)</option>
+                            <option value="29">甄洛(群)</option>
+                            <option value="30">陈宫(群)</option>
+                            <option value="31">灵帝</option>
+                            <option value="32">诸葛亮</option>
+                            <option value="33">张春华</option>
+                            <option value="34">王朗</option>
+                            <option value="35">太史慈</option>
+                            <option value="36">孙权</option>
+                            <option value="37">吕蒙</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>战法</th>
+                <th id="skill-group">
+                    <div class="skillselection">
+                        <select id="skill-select_1">
+                            <option value="" id="choose">-选择战法-</option>
+                            <optgroup label="指挥" id="category"></optgroup>
+                            <option value="1">桃园结义</option>
+                            <option value="2">避其锋芒</option>
+                            <option value="3">大赏三军</option>
+                            <option value="4">无心恋战</option>
+                            <option value="5">反计之策</option>
+                            <option value="6">战必断金</option>
+                            <option value="7">攻其不备</option>
+                            <option value="8">重整旗鼓</option>
+                            <option value="9">不攻</option>
+                            <option value="10">始计</option>
+                            <option value="11">磐阵善守</option>
+                            <option value="12">反间</option>
+                            <option value="13">单骑救主</option>
+                            <option value="14">先驱突击</option>
+                            <option value="15">一夫当关</option>
+                            <option value="16">鸟云山兵</option>
+                            <option value="17">白刃</option>
+                            <option value="18">形兵之极</option>
+                            <option value="19">胜兵求战</option>
+                            <option value="20">锋矢</option>
+                            <option value="21">长兵方阵</option>
+                            </optgroup>
+                            <optgroup label="被动" id="category"></optgroup>
+                            <option value="22">步步为营</option>
+                            <option value="23">深谋远虑</option>
+                            <option value="24">健卒不殆</option>
+                            <option value="25">青囊秘要</option>
+                            <option value="26">回马</option>
+                            </optgroup>
+                            <optgroup label="主动" id="category"></optgroup>
+                            <option value="27">河内世泽</option>
+                            <option value="28">浑水摸鱼</option>
+                            <option value="29">一骑当千</option>
+                            <option value="30">十面埋伏</option>
+                            <option value="31">极火佐攻</option>
+                            <option value="32">绝水遏敌</option>
+                            <option value="33">人中吕布</option>
+                            <option value="34">焰焚箕轸</option>
+                            <option value="35">楚歌四起</option>
+                            <option value="36">掎角之势</option>
+                            <option value="37">雄兵破敌</option>
+                            <option value="38">折戟强攻</option>
+                            <option value="39">兼弱攻昧</option>
+                            <option value="40">伐谋</option>
+                            <option value="41">落雷</option>
+                            <option value="42">迷阵</option>
+                            </optgroup>
+                            </optgroup>
+                            <optgroup label="追击" id="category"></optgroup>
+                            <option value="43">温酒斩将</option>
+                            <option value="44">钝兵挫锐</option>
+                            <option value="45">怯心夺志</option>
+                            <option value="46">疾击其后</option>
+                            <option value="47">文伐</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+                <th id="skill-group">
+                    <div class="skillselection">
+                        <select id="skill-select_1">
+                            <option value="" id="choose">-选择战法-</option>
+                            <optgroup label="指挥" id="category"></optgroup>
+                            <option value="1">桃园结义</option>
+                            <option value="2">避其锋芒</option>
+                            <option value="3">大赏三军</option>
+                            <option value="4">无心恋战</option>
+                            <option value="5">反计之策</option>
+                            <option value="6">战必断金</option>
+                            <option value="7">攻其不备</option>
+                            <option value="8">重整旗鼓</option>
+                            <option value="9">不攻</option>
+                            <option value="10">始计</option>
+                            <option value="11">磐阵善守</option>
+                            <option value="12">反间</option>
+                            <option value="13">单骑救主</option>
+                            <option value="14">先驱突击</option>
+                            <option value="15">一夫当关</option>
+                            <option value="16">鸟云山兵</option>
+                            <option value="17">白刃</option>
+                            <option value="18">形兵之极</option>
+                            <option value="19">胜兵求战</option>
+                            <option value="20">锋矢</option>
+                            <option value="21">长兵方阵</option>
+                            </optgroup>
+                            <optgroup label="被动" id="category"></optgroup>
+                            <option value="22">步步为营</option>
+                            <option value="23">深谋远虑</option>
+                            <option value="24">健卒不殆</option>
+                            <option value="25">青囊秘要</option>
+                            <option value="26">回马</option>
+                            </optgroup>
+                            <optgroup label="主动" id="category"></optgroup>
+                            <option value="27">河内世泽</option>
+                            <option value="28">浑水摸鱼</option>
+                            <option value="29">一骑当千</option>
+                            <option value="30">十面埋伏</option>
+                            <option value="31">极火佐攻</option>
+                            <option value="32">绝水遏敌</option>
+                            <option value="33">人中吕布</option>
+                            <option value="34">焰焚箕轸</option>
+                            <option value="35">楚歌四起</option>
+                            <option value="36">掎角之势</option>
+                            <option value="37">雄兵破敌</option>
+                            <option value="38">折戟强攻</option>
+                            <option value="39">兼弱攻昧</option>
+                            <option value="40">伐谋</option>
+                            <option value="41">落雷</option>
+                            <option value="42">迷阵</option>
+                            </optgroup>
+                            </optgroup>
+                            <optgroup label="追击" id="category"></optgroup>
+                            <option value="43">温酒斩将</option>
+                            <option value="44">钝兵挫锐</option>
+                            <option value="45">怯心夺志</option>
+                            <option value="46">疾击其后</option>
+                            <option value="47">文伐</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+                <th id="skill-group">
+                    <div class="skillselection">
+                        <select id="skill-select_1">
+                            <option value="" id="choose">-选择战法-</option>
+                            <optgroup label="指挥" id="category"></optgroup>
+                            <option value="1">桃园结义</option>
+                            <option value="2">避其锋芒</option>
+                            <option value="3">大赏三军</option>
+                            <option value="4">无心恋战</option>
+                            <option value="5">反计之策</option>
+                            <option value="6">战必断金</option>
+                            <option value="7">攻其不备</option>
+                            <option value="8">重整旗鼓</option>
+                            <option value="9">不攻</option>
+                            <option value="10">始计</option>
+                            <option value="11">磐阵善守</option>
+                            <option value="12">反间</option>
+                            <option value="13">单骑救主</option>
+                            <option value="14">先驱突击</option>
+                            <option value="15">一夫当关</option>
+                            <option value="16">鸟云山兵</option>
+                            <option value="17">白刃</option>
+                            <option value="18">形兵之极</option>
+                            <option value="19">胜兵求战</option>
+                            <option value="20">锋矢</option>
+                            <option value="21">长兵方阵</option>
+                            </optgroup>
+                            <optgroup label="被动" id="category"></optgroup>
+                            <option value="22">步步为营</option>
+                            <option value="23">深谋远虑</option>
+                            <option value="24">健卒不殆</option>
+                            <option value="25">青囊秘要</option>
+                            <option value="26">回马</option>
+                            </optgroup>
+                            <optgroup label="主动" id="category"></optgroup>
+                            <option value="27">河内世泽</option>
+                            <option value="28">浑水摸鱼</option>
+                            <option value="29">一骑当千</option>
+                            <option value="30">十面埋伏</option>
+                            <option value="31">极火佐攻</option>
+                            <option value="32">绝水遏敌</option>
+                            <option value="33">人中吕布</option>
+                            <option value="34">焰焚箕轸</option>
+                            <option value="35">楚歌四起</option>
+                            <option value="36">掎角之势</option>
+                            <option value="37">雄兵破敌</option>
+                            <option value="38">折戟强攻</option>
+                            <option value="39">兼弱攻昧</option>
+                            <option value="40">伐谋</option>
+                            <option value="41">落雷</option>
+                            <option value="42">迷阵</option>
+                            </optgroup>
+                            </optgroup>
+                            <optgroup label="追击" id="category"></optgroup>
+                            <option value="43">温酒斩将</option>
+                            <option value="44">钝兵挫锐</option>
+                            <option value="45">怯心夺志</option>
+                            <option value="46">疾击其后</option>
+                            <option value="47">文伐</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>战法</th>
+                <th id="skill-group">
+                    <div class="skillselection">
+                        <select id="skill-select_1">
+                            <option value="" id="choose">-选择战法-</option>
+                            <optgroup label="指挥" id="category"></optgroup>
+                            <option value="1">桃园结义</option>
+                            <option value="2">避其锋芒</option>
+                            <option value="3">大赏三军</option>
+                            <option value="4">无心恋战</option>
+                            <option value="5">反计之策</option>
+                            <option value="6">战必断金</option>
+                            <option value="7">攻其不备</option>
+                            <option value="8">重整旗鼓</option>
+                            <option value="9">不攻</option>
+                            <option value="10">始计</option>
+                            <option value="11">磐阵善守</option>
+                            <option value="12">反间</option>
+                            <option value="13">单骑救主</option>
+                            <option value="14">先驱突击</option>
+                            <option value="15">一夫当关</option>
+                            <option value="16">鸟云山兵</option>
+                            <option value="17">白刃</option>
+                            <option value="18">形兵之极</option>
+                            <option value="19">胜兵求战</option>
+                            <option value="20">锋矢</option>
+                            <option value="21">长兵方阵</option>
+                            </optgroup>
+                            <optgroup label="被动" id="category"></optgroup>
+                            <option value="22">步步为营</option>
+                            <option value="23">深谋远虑</option>
+                            <option value="24">健卒不殆</option>
+                            <option value="25">青囊秘要</option>
+                            <option value="26">回马</option>
+                            </optgroup>
+                            <optgroup label="主动" id="category"></optgroup>
+                            <option value="27">河内世泽</option>
+                            <option value="28">浑水摸鱼</option>
+                            <option value="29">一骑当千</option>
+                            <option value="30">十面埋伏</option>
+                            <option value="31">极火佐攻</option>
+                            <option value="32">绝水遏敌</option>
+                            <option value="33">人中吕布</option>
+                            <option value="34">焰焚箕轸</option>
+                            <option value="35">楚歌四起</option>
+                            <option value="36">掎角之势</option>
+                            <option value="37">雄兵破敌</option>
+                            <option value="38">折戟强攻</option>
+                            <option value="39">兼弱攻昧</option>
+                            <option value="40">伐谋</option>
+                            <option value="41">落雷</option>
+                            <option value="42">迷阵</option>
+                            </optgroup>
+                            </optgroup>
+                            <optgroup label="追击" id="category"></optgroup>
+                            <option value="43">温酒斩将</option>
+                            <option value="44">钝兵挫锐</option>
+                            <option value="45">怯心夺志</option>
+                            <option value="46">疾击其后</option>
+                            <option value="47">文伐</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+                <th id="skill-group">
+                    <div class="skillselection">
+                        <select id="skill-select_1">
+                            <option value="" id="choose">-选择战法-</option>
+                            <optgroup label="指挥" id="category"></optgroup>
+                            <option value="1">桃园结义</option>
+                            <option value="2">避其锋芒</option>
+                            <option value="3">大赏三军</option>
+                            <option value="4">无心恋战</option>
+                            <option value="5">反计之策</option>
+                            <option value="6">战必断金</option>
+                            <option value="7">攻其不备</option>
+                            <option value="8">重整旗鼓</option>
+                            <option value="9">不攻</option>
+                            <option value="10">始计</option>
+                            <option value="11">磐阵善守</option>
+                            <option value="12">反间</option>
+                            <option value="13">单骑救主</option>
+                            <option value="14">先驱突击</option>
+                            <option value="15">一夫当关</option>
+                            <option value="16">鸟云山兵</option>
+                            <option value="17">白刃</option>
+                            <option value="18">形兵之极</option>
+                            <option value="19">胜兵求战</option>
+                            <option value="20">锋矢</option>
+                            <option value="21">长兵方阵</option>
+                            </optgroup>
+                            <optgroup label="被动" id="category"></optgroup>
+                            <option value="22">步步为营</option>
+                            <option value="23">深谋远虑</option>
+                            <option value="24">健卒不殆</option>
+                            <option value="25">青囊秘要</option>
+                            <option value="26">回马</option>
+                            </optgroup>
+                            <optgroup label="主动" id="category"></optgroup>
+                            <option value="27">河内世泽</option>
+                            <option value="28">浑水摸鱼</option>
+                            <option value="29">一骑当千</option>
+                            <option value="30">十面埋伏</option>
+                            <option value="31">极火佐攻</option>
+                            <option value="32">绝水遏敌</option>
+                            <option value="33">人中吕布</option>
+                            <option value="34">焰焚箕轸</option>
+                            <option value="35">楚歌四起</option>
+                            <option value="36">掎角之势</option>
+                            <option value="37">雄兵破敌</option>
+                            <option value="38">折戟强攻</option>
+                            <option value="39">兼弱攻昧</option>
+                            <option value="40">伐谋</option>
+                            <option value="41">落雷</option>
+                            <option value="42">迷阵</option>
+                            </optgroup>
+                            </optgroup>
+                            <optgroup label="追击" id="category"></optgroup>
+                            <option value="43">温酒斩将</option>
+                            <option value="44">钝兵挫锐</option>
+                            <option value="45">怯心夺志</option>
+                            <option value="46">疾击其后</option>
+                            <option value="47">文伐</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+                <th id="skill-group">
+                    <div class="skillselection">
+                        <select id="skill-select_1">
+                            <option value="" id="choose">-选择战法-</option>
+                            <optgroup label="指挥" id="category"></optgroup>
+                            <option value="1">桃园结义</option>
+                            <option value="2">避其锋芒</option>
+                            <option value="3">大赏三军</option>
+                            <option value="4">无心恋战</option>
+                            <option value="5">反计之策</option>
+                            <option value="6">战必断金</option>
+                            <option value="7">攻其不备</option>
+                            <option value="8">重整旗鼓</option>
+                            <option value="9">不攻</option>
+                            <option value="10">始计</option>
+                            <option value="11">磐阵善守</option>
+                            <option value="12">反间</option>
+                            <option value="13">单骑救主</option>
+                            <option value="14">先驱突击</option>
+                            <option value="15">一夫当关</option>
+                            <option value="16">鸟云山兵</option>
+                            <option value="17">白刃</option>
+                            <option value="18">形兵之极</option>
+                            <option value="19">胜兵求战</option>
+                            <option value="20">锋矢</option>
+                            <option value="21">长兵方阵</option>
+                            </optgroup>
+                            <optgroup label="被动" id="category"></optgroup>
+                            <option value="22">步步为营</option>
+                            <option value="23">深谋远虑</option>
+                            <option value="24">健卒不殆</option>
+                            <option value="25">青囊秘要</option>
+                            <option value="26">回马</option>
+                            </optgroup>
+                            <optgroup label="主动" id="category"></optgroup>
+                            <option value="27">河内世泽</option>
+                            <option value="28">浑水摸鱼</option>
+                            <option value="29">一骑当千</option>
+                            <option value="30">十面埋伏</option>
+                            <option value="31">极火佐攻</option>
+                            <option value="32">绝水遏敌</option>
+                            <option value="33">人中吕布</option>
+                            <option value="34">焰焚箕轸</option>
+                            <option value="35">楚歌四起</option>
+                            <option value="36">掎角之势</option>
+                            <option value="37">雄兵破敌</option>
+                            <option value="38">折戟强攻</option>
+                            <option value="39">兼弱攻昧</option>
+                            <option value="40">伐谋</option>
+                            <option value="41">落雷</option>
+                            <option value="42">迷阵</option>
+                            </optgroup>
+                            </optgroup>
+                            <optgroup label="追击" id="category"></optgroup>
+                            <option value="43">温酒斩将</option>
+                            <option value="44">钝兵挫锐</option>
+                            <option value="45">怯心夺志</option>
+                            <option value="46">疾击其后</option>
+                            <option value="47">文伐</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th id="team">队伍2</th>
+                <th id="hero-group">
+                    <div class="heroselection">
+                        <select id="hero-select_4">
+                            <option value="" id="choose">-选择大营-</option>
+                            <optgroup label="步兵" id="category"></optgroup>
+                            <option value="1">贾诩((群)</option>
+                            <option value="2">妲己</option>
+                            <option value="3">孟获</option>
+                            <option value="4">袁绍(汉)</option>
+                            <option value="5">刘备</option>
+                            <option value="6">赵云</option>
+                            <option value="7">庞统</option>
+                            <option value="8">黄忠</option>
+                            <option value="9">魏延</option>
+                            <option value="10">荀攸</option>
+                            <option value="11">司马懿</option>
+                            <option value="12">郝昭</option>
+                            <option value="13">张郃</option>
+                            <option value="14">黄盖</option>
+                            </optgroup>
+                            <optgroup label="骑兵" id="category"></optgroup>
+                            <option value="15">马超(赛季)</option>
+                            <option value="16">华雄</option>
+                            <option value="17">张角</option>
+                            <option value="18">马云禄</option>
+                            <option value="19">祝融夫人</option>
+                            <option value="20">张飞</option>
+                            <option value="21">徐庶</option>
+                            <option value="22">法正</option>
+                            <option value="23">张辽</option>
+                            <option value="24">曹操</option>
+                            <option value="25">荀彧</option>
+                            <option value="26">曹纯</option>
+                            <option value="27">郭嘉</option>
+                            </optgroup>
+                            <optgroup label="弓兵" id="category"></optgroup>
+                            <option value="28">吕布(群)</option>
+                            <option value="29">甄洛(群)</option>
+                            <option value="30">陈宫(群)</option>
+                            <option value="31">灵帝</option>
+                            <option value="32">诸葛亮</option>
+                            <option value="33">张春华</option>
+                            <option value="34">王朗</option>
+                            <option value="35">太史慈</option>
+                            <option value="36">孙权</option>
+                            <option value="37">吕蒙</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+                <th id="hero-group">
+                    <div class="heroselection">
+                        <select id="hero-select_5">
+                            <option value="" id="choose">-选择中军-</option>
+                            <optgroup label="步兵" id="category"></optgroup>
+                            <option value="1">贾诩((群)</option>
+                            <option value="2">妲己</option>
+                            <option value="3">孟获</option>
+                            <option value="4">袁绍(汉)</option>
+                            <option value="5">刘备</option>
+                            <option value="6">赵云</option>
+                            <option value="7">庞统</option>
+                            <option value="8">黄忠</option>
+                            <option value="9">魏延</option>
+                            <option value="10">荀攸</option>
+                            <option value="11">司马懿</option>
+                            <option value="12">郝昭</option>
+                            <option value="13">张郃</option>
+                            <option value="14">黄盖</option>
+                            </optgroup>
+                            <optgroup label="骑兵" id="category"></optgroup>
+                            <option value="15">马超(赛季)</option>
+                            <option value="16">华雄</option>
+                            <option value="17">张角</option>
+                            <option value="18">马云禄</option>
+                            <option value="19">祝融夫人</option>
+                            <option value="20">张飞</option>
+                            <option value="21">徐庶</option>
+                            <option value="22">法正</option>
+                            <option value="23">张辽</option>
+                            <option value="24">曹操</option>
+                            <option value="25">荀彧</option>
+                            <option value="26">曹纯</option>
+                            <option value="27">郭嘉</option>
+                            </optgroup>
+                            <optgroup label="弓兵" id="category"></optgroup>
+                            <option value="28">吕布(群)</option>
+                            <option value="29">甄洛(群)</option>
+                            <option value="30">陈宫(群)</option>
+                            <option value="31">灵帝</option>
+                            <option value="32">诸葛亮</option>
+                            <option value="33">张春华</option>
+                            <option value="34">王朗</option>
+                            <option value="35">太史慈</option>
+                            <option value="36">孙权</option>
+                            <option value="37">吕蒙</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    </div>
+                </th>
+                <th id="hero-group">
+                    <div class="heroselection">
+                        <select id="hero-select_6">
+                            <option value="" id="choose">-选择前锋-</option>
+                            <optgroup label="步兵" id="category"></optgroup>
+                            <option value="1">贾诩((群)</option>
+                            <option value="2">妲己</option>
+                            <option value="3">孟获</option>
+                            <option value="4">袁绍(汉)</option>
+                            <option value="5">刘备</option>
+                            <option value="6">赵云</option>
+                            <option value="7">庞统</option>
+                            <option value="8">黄忠</option>
+                            <option value="9">魏延</option>
+                            <option value="10">荀攸</option>
+                            <option value="11">司马懿</option>
+                            <option value="12">郝昭</option>
+                            <option value="13">张郃</option>
+                            <option value="14">黄盖</option>
+                            </optgroup>
+                            <optgroup label="骑兵" id="category"></optgroup>
+                            <option value="15">马超(赛季)</option>
+                            <option value="16">华雄</option>
+                            <option value="17">张角</option>
+                            <option value="18">马云禄</option>
+                            <option value="19">祝融夫人</option>
+                            <option value="20">张飞</option>
+                            <option value="21">徐庶</option>
+                            <option value="22">法正</option>
+                            <option value="23">张辽</option>
+                            <option value="24">曹操</option>
+                            <option value="25">荀彧</option>
+                            <option value="26">曹纯</option>
+                            <option value="27">郭嘉</option>
+                            </optgroup>
+                            <optgroup label="弓兵" id="category"></optgroup>
+                            <option value="28">吕布(群)</option>
+                            <option value="29">甄洛(群)</option>
+                            <option value="30">陈宫(群)</option>
+                            <option value="31">灵帝</option>
+                            <option value="32">诸葛亮</option>
+                            <option value="33">张春华</option>
+                            <option value="34">王朗</option>
+                            <option value="35">太史慈</option>
+                            <option value="36">孙权</option>
+                            <option value="37">吕蒙</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>战法</th>
+                <th id="skill-group">
+                    <div class="skillselection">
+                        <select id="skill-select_1">
+                            <option value="" id="choose">-选择战法-</option>
+                            <optgroup label="指挥" id="category"></optgroup>
+                            <option value="1">桃园结义</option>
+                            <option value="2">避其锋芒</option>
+                            <option value="3">大赏三军</option>
+                            <option value="4">无心恋战</option>
+                            <option value="5">反计之策</option>
+                            <option value="6">战必断金</option>
+                            <option value="7">攻其不备</option>
+                            <option value="8">重整旗鼓</option>
+                            <option value="9">不攻</option>
+                            <option value="10">始计</option>
+                            <option value="11">磐阵善守</option>
+                            <option value="12">反间</option>
+                            <option value="13">单骑救主</option>
+                            <option value="14">先驱突击</option>
+                            <option value="15">一夫当关</option>
+                            <option value="16">鸟云山兵</option>
+                            <option value="17">白刃</option>
+                            <option value="18">形兵之极</option>
+                            <option value="19">胜兵求战</option>
+                            <option value="20">锋矢</option>
+                            <option value="21">长兵方阵</option>
+                            </optgroup>
+                            <optgroup label="被动" id="category"></optgroup>
+                            <option value="22">步步为营</option>
+                            <option value="23">深谋远虑</option>
+                            <option value="24">健卒不殆</option>
+                            <option value="25">青囊秘要</option>
+                            <option value="26">回马</option>
+                            </optgroup>
+                            <optgroup label="主动" id="category"></optgroup>
+                            <option value="27">河内世泽</option>
+                            <option value="28">浑水摸鱼</option>
+                            <option value="29">一骑当千</option>
+                            <option value="30">十面埋伏</option>
+                            <option value="31">极火佐攻</option>
+                            <option value="32">绝水遏敌</option>
+                            <option value="33">人中吕布</option>
+                            <option value="34">焰焚箕轸</option>
+                            <option value="35">楚歌四起</option>
+                            <option value="36">掎角之势</option>
+                            <option value="37">雄兵破敌</option>
+                            <option value="38">折戟强攻</option>
+                            <option value="39">兼弱攻昧</option>
+                            <option value="40">伐谋</option>
+                            <option value="41">落雷</option>
+                            <option value="42">迷阵</option>
+                            </optgroup>
+                            </optgroup>
+                            <optgroup label="追击" id="category"></optgroup>
+                            <option value="43">温酒斩将</option>
+                            <option value="44">钝兵挫锐</option>
+                            <option value="45">怯心夺志</option>
+                            <option value="46">疾击其后</option>
+                            <option value="47">文伐</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+                <th id="skill-group">
+                    <div class="skillselection">
+                        <select id="skill-select_1">
+                            <option value="" id="choose">-选择战法-</option>
+                            <optgroup label="指挥" id="category"></optgroup>
+                            <option value="1">桃园结义</option>
+                            <option value="2">避其锋芒</option>
+                            <option value="3">大赏三军</option>
+                            <option value="4">无心恋战</option>
+                            <option value="5">反计之策</option>
+                            <option value="6">战必断金</option>
+                            <option value="7">攻其不备</option>
+                            <option value="8">重整旗鼓</option>
+                            <option value="9">不攻</option>
+                            <option value="10">始计</option>
+                            <option value="11">磐阵善守</option>
+                            <option value="12">反间</option>
+                            <option value="13">单骑救主</option>
+                            <option value="14">先驱突击</option>
+                            <option value="15">一夫当关</option>
+                            <option value="16">鸟云山兵</option>
+                            <option value="17">白刃</option>
+                            <option value="18">形兵之极</option>
+                            <option value="19">胜兵求战</option>
+                            <option value="20">锋矢</option>
+                            <option value="21">长兵方阵</option>
+                            </optgroup>
+                            <optgroup label="被动" id="category"></optgroup>
+                            <option value="22">步步为营</option>
+                            <option value="23">深谋远虑</option>
+                            <option value="24">健卒不殆</option>
+                            <option value="25">青囊秘要</option>
+                            <option value="26">回马</option>
+                            </optgroup>
+                            <optgroup label="主动" id="category"></optgroup>
+                            <option value="27">河内世泽</option>
+                            <option value="28">浑水摸鱼</option>
+                            <option value="29">一骑当千</option>
+                            <option value="30">十面埋伏</option>
+                            <option value="31">极火佐攻</option>
+                            <option value="32">绝水遏敌</option>
+                            <option value="33">人中吕布</option>
+                            <option value="34">焰焚箕轸</option>
+                            <option value="35">楚歌四起</option>
+                            <option value="36">掎角之势</option>
+                            <option value="37">雄兵破敌</option>
+                            <option value="38">折戟强攻</option>
+                            <option value="39">兼弱攻昧</option>
+                            <option value="40">伐谋</option>
+                            <option value="41">落雷</option>
+                            <option value="42">迷阵</option>
+                            </optgroup>
+                            </optgroup>
+                            <optgroup label="追击" id="category"></optgroup>
+                            <option value="43">温酒斩将</option>
+                            <option value="44">钝兵挫锐</option>
+                            <option value="45">怯心夺志</option>
+                            <option value="46">疾击其后</option>
+                            <option value="47">文伐</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+                <th id="skill-group">
+                    <div class="skillselection">
+                        <select id="skill-select_1">
+                            <option value="" id="choose">-选择战法-</option>
+                            <optgroup label="指挥" id="category"></optgroup>
+                            <option value="1">桃园结义</option>
+                            <option value="2">避其锋芒</option>
+                            <option value="3">大赏三军</option>
+                            <option value="4">无心恋战</option>
+                            <option value="5">反计之策</option>
+                            <option value="6">战必断金</option>
+                            <option value="7">攻其不备</option>
+                            <option value="8">重整旗鼓</option>
+                            <option value="9">不攻</option>
+                            <option value="10">始计</option>
+                            <option value="11">磐阵善守</option>
+                            <option value="12">反间</option>
+                            <option value="13">单骑救主</option>
+                            <option value="14">先驱突击</option>
+                            <option value="15">一夫当关</option>
+                            <option value="16">鸟云山兵</option>
+                            <option value="17">白刃</option>
+                            <option value="18">形兵之极</option>
+                            <option value="19">胜兵求战</option>
+                            <option value="20">锋矢</option>
+                            <option value="21">长兵方阵</option>
+                            </optgroup>
+                            <optgroup label="被动" id="category"></optgroup>
+                            <option value="22">步步为营</option>
+                            <option value="23">深谋远虑</option>
+                            <option value="24">健卒不殆</option>
+                            <option value="25">青囊秘要</option>
+                            <option value="26">回马</option>
+                            </optgroup>
+                            <optgroup label="主动" id="category"></optgroup>
+                            <option value="27">河内世泽</option>
+                            <option value="28">浑水摸鱼</option>
+                            <option value="29">一骑当千</option>
+                            <option value="30">十面埋伏</option>
+                            <option value="31">极火佐攻</option>
+                            <option value="32">绝水遏敌</option>
+                            <option value="33">人中吕布</option>
+                            <option value="34">焰焚箕轸</option>
+                            <option value="35">楚歌四起</option>
+                            <option value="36">掎角之势</option>
+                            <option value="37">雄兵破敌</option>
+                            <option value="38">折戟强攻</option>
+                            <option value="39">兼弱攻昧</option>
+                            <option value="40">伐谋</option>
+                            <option value="41">落雷</option>
+                            <option value="42">迷阵</option>
+                            </optgroup>
+                            </optgroup>
+                            <optgroup label="追击" id="category"></optgroup>
+                            <option value="43">温酒斩将</option>
+                            <option value="44">钝兵挫锐</option>
+                            <option value="45">怯心夺志</option>
+                            <option value="46">疾击其后</option>
+                            <option value="47">文伐</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>战法</th>
+                <th id="skill-group">
+                    <div class="skillselection">
+                        <select id="skill-select_1">
+                            <option value="" id="choose">-选择战法-</option>
+                            <optgroup label="指挥" id="category"></optgroup>
+                            <option value="1">桃园结义</option>
+                            <option value="2">避其锋芒</option>
+                            <option value="3">大赏三军</option>
+                            <option value="4">无心恋战</option>
+                            <option value="5">反计之策</option>
+                            <option value="6">战必断金</option>
+                            <option value="7">攻其不备</option>
+                            <option value="8">重整旗鼓</option>
+                            <option value="9">不攻</option>
+                            <option value="10">始计</option>
+                            <option value="11">磐阵善守</option>
+                            <option value="12">反间</option>
+                            <option value="13">单骑救主</option>
+                            <option value="14">先驱突击</option>
+                            <option value="15">一夫当关</option>
+                            <option value="16">鸟云山兵</option>
+                            <option value="17">白刃</option>
+                            <option value="18">形兵之极</option>
+                            <option value="19">胜兵求战</option>
+                            <option value="20">锋矢</option>
+                            <option value="21">长兵方阵</option>
+                            </optgroup>
+                            <optgroup label="被动" id="category"></optgroup>
+                            <option value="22">步步为营</option>
+                            <option value="23">深谋远虑</option>
+                            <option value="24">健卒不殆</option>
+                            <option value="25">青囊秘要</option>
+                            <option value="26">回马</option>
+                            </optgroup>
+                            <optgroup label="主动" id="category"></optgroup>
+                            <option value="27">河内世泽</option>
+                            <option value="28">浑水摸鱼</option>
+                            <option value="29">一骑当千</option>
+                            <option value="30">十面埋伏</option>
+                            <option value="31">极火佐攻</option>
+                            <option value="32">绝水遏敌</option>
+                            <option value="33">人中吕布</option>
+                            <option value="34">焰焚箕轸</option>
+                            <option value="35">楚歌四起</option>
+                            <option value="36">掎角之势</option>
+                            <option value="37">雄兵破敌</option>
+                            <option value="38">折戟强攻</option>
+                            <option value="39">兼弱攻昧</option>
+                            <option value="40">伐谋</option>
+                            <option value="41">落雷</option>
+                            <option value="42">迷阵</option>
+                            </optgroup>
+                            </optgroup>
+                            <optgroup label="追击" id="category"></optgroup>
+                            <option value="43">温酒斩将</option>
+                            <option value="44">钝兵挫锐</option>
+                            <option value="45">怯心夺志</option>
+                            <option value="46">疾击其后</option>
+                            <option value="47">文伐</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+                <th id="skill-group">
+                    <div class="skillselection">
+                        <select id="skill-select_1">
+                            <option value="" id="choose">-选择战法-</option>
+                            <optgroup label="指挥" id="category"></optgroup>
+                            <option value="1">桃园结义</option>
+                            <option value="2">避其锋芒</option>
+                            <option value="3">大赏三军</option>
+                            <option value="4">无心恋战</option>
+                            <option value="5">反计之策</option>
+                            <option value="6">战必断金</option>
+                            <option value="7">攻其不备</option>
+                            <option value="8">重整旗鼓</option>
+                            <option value="9">不攻</option>
+                            <option value="10">始计</option>
+                            <option value="11">磐阵善守</option>
+                            <option value="12">反间</option>
+                            <option value="13">单骑救主</option>
+                            <option value="14">先驱突击</option>
+                            <option value="15">一夫当关</option>
+                            <option value="16">鸟云山兵</option>
+                            <option value="17">白刃</option>
+                            <option value="18">形兵之极</option>
+                            <option value="19">胜兵求战</option>
+                            <option value="20">锋矢</option>
+                            <option value="21">长兵方阵</option>
+                            </optgroup>
+                            <optgroup label="被动" id="category"></optgroup>
+                            <option value="22">步步为营</option>
+                            <option value="23">深谋远虑</option>
+                            <option value="24">健卒不殆</option>
+                            <option value="25">青囊秘要</option>
+                            <option value="26">回马</option>
+                            </optgroup>
+                            <optgroup label="主动" id="category"></optgroup>
+                            <option value="27">河内世泽</option>
+                            <option value="28">浑水摸鱼</option>
+                            <option value="29">一骑当千</option>
+                            <option value="30">十面埋伏</option>
+                            <option value="31">极火佐攻</option>
+                            <option value="32">绝水遏敌</option>
+                            <option value="33">人中吕布</option>
+                            <option value="34">焰焚箕轸</option>
+                            <option value="35">楚歌四起</option>
+                            <option value="36">掎角之势</option>
+                            <option value="37">雄兵破敌</option>
+                            <option value="38">折戟强攻</option>
+                            <option value="39">兼弱攻昧</option>
+                            <option value="40">伐谋</option>
+                            <option value="41">落雷</option>
+                            <option value="42">迷阵</option>
+                            </optgroup>
+                            </optgroup>
+                            <optgroup label="追击" id="category"></optgroup>
+                            <option value="43">温酒斩将</option>
+                            <option value="44">钝兵挫锐</option>
+                            <option value="45">怯心夺志</option>
+                            <option value="46">疾击其后</option>
+                            <option value="47">文伐</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+                <th id="skill-group">
+                    <div class="skillselection">
+                        <select id="skill-select_1">
+                            <option value="" id="choose">-选择战法-</option>
+                            <optgroup label="指挥" id="category"></optgroup>
+                            <option value="1">桃园结义</option>
+                            <option value="2">避其锋芒</option>
+                            <option value="3">大赏三军</option>
+                            <option value="4">无心恋战</option>
+                            <option value="5">反计之策</option>
+                            <option value="6">战必断金</option>
+                            <option value="7">攻其不备</option>
+                            <option value="8">重整旗鼓</option>
+                            <option value="9">不攻</option>
+                            <option value="10">始计</option>
+                            <option value="11">磐阵善守</option>
+                            <option value="12">反间</option>
+                            <option value="13">单骑救主</option>
+                            <option value="14">先驱突击</option>
+                            <option value="15">一夫当关</option>
+                            <option value="16">鸟云山兵</option>
+                            <option value="17">白刃</option>
+                            <option value="18">形兵之极</option>
+                            <option value="19">胜兵求战</option>
+                            <option value="20">锋矢</option>
+                            <option value="21">长兵方阵</option>
+                            </optgroup>
+                            <optgroup label="被动" id="category"></optgroup>
+                            <option value="22">步步为营</option>
+                            <option value="23">深谋远虑</option>
+                            <option value="24">健卒不殆</option>
+                            <option value="25">青囊秘要</option>
+                            <option value="26">回马</option>
+                            </optgroup>
+                            <optgroup label="主动" id="category"></optgroup>
+                            <option value="27">河内世泽</option>
+                            <option value="28">浑水摸鱼</option>
+                            <option value="29">一骑当千</option>
+                            <option value="30">十面埋伏</option>
+                            <option value="31">极火佐攻</option>
+                            <option value="32">绝水遏敌</option>
+                            <option value="33">人中吕布</option>
+                            <option value="34">焰焚箕轸</option>
+                            <option value="35">楚歌四起</option>
+                            <option value="36">掎角之势</option>
+                            <option value="37">雄兵破敌</option>
+                            <option value="38">折戟强攻</option>
+                            <option value="39">兼弱攻昧</option>
+                            <option value="40">伐谋</option>
+                            <option value="41">落雷</option>
+                            <option value="42">迷阵</option>
+                            </optgroup>
+                            </optgroup>
+                            <optgroup label="追击" id="category"></optgroup>
+                            <option value="43">温酒斩将</option>
+                            <option value="44">钝兵挫锐</option>
+                            <option value="45">怯心夺志</option>
+                            <option value="46">疾击其后</option>
+                            <option value="47">文伐</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th id="team">队伍3</th>
+                <th id="hero-group">
+                    <div class="heroselection">
+                        <select id="hero-select_7">
+                            <option value="" id="choose">-选择大营-</option>
+                            <optgroup label="步兵" id="category"></optgroup>
+                            <option value="1">贾诩((群)</option>
+                            <option value="2">妲己</option>
+                            <option value="3">孟获</option>
+                            <option value="4">袁绍(汉)</option>
+                            <option value="5">刘备</option>
+                            <option value="6">赵云</option>
+                            <option value="7">庞统</option>
+                            <option value="8">黄忠</option>
+                            <option value="9">魏延</option>
+                            <option value="10">荀攸</option>
+                            <option value="11">司马懿</option>
+                            <option value="12">郝昭</option>
+                            <option value="13">张郃</option>
+                            <option value="14">黄盖</option>
+                            </optgroup>
+                            <optgroup label="骑兵" id="category"></optgroup>
+                            <option value="15">马超(赛季)</option>
+                            <option value="16">华雄</option>
+                            <option value="17">张角</option>
+                            <option value="18">马云禄</option>
+                            <option value="19">祝融夫人</option>
+                            <option value="20">张飞</option>
+                            <option value="21">徐庶</option>
+                            <option value="22">法正</option>
+                            <option value="23">张辽</option>
+                            <option value="24">曹操</option>
+                            <option value="25">荀彧</option>
+                            <option value="26">曹纯</option>
+                            <option value="27">郭嘉</option>
+                            </optgroup>
+                            <optgroup label="弓兵" id="category"></optgroup>
+                            <option value="28">吕布(群)</option>
+                            <option value="29">甄洛(群)</option>
+                            <option value="30">陈宫(群)</option>
+                            <option value="31">灵帝</option>
+                            <option value="32">诸葛亮</option>
+                            <option value="33">张春华</option>
+                            <option value="34">王朗</option>
+                            <option value="35">太史慈</option>
+                            <option value="36">孙权</option>
+                            <option value="37">吕蒙</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+                <th id="hero-group">
+                    <div class="heroselection">
+                        <select id="hero-select_8">
+                            <option value="" id="choose">-选择中军-</option>
+                            <optgroup label="步兵" id="category"></optgroup>
+                            <option value="1">贾诩((群)</option>
+                            <option value="2">妲己</option>
+                            <option value="3">孟获</option>
+                            <option value="4">袁绍(汉)</option>
+                            <option value="5">刘备</option>
+                            <option value="6">赵云</option>
+                            <option value="7">庞统</option>
+                            <option value="8">黄忠</option>
+                            <option value="9">魏延</option>
+                            <option value="10">荀攸</option>
+                            <option value="11">司马懿</option>
+                            <option value="12">郝昭</option>
+                            <option value="13">张郃</option>
+                            <option value="14">黄盖</option>
+                            </optgroup>
+                            <optgroup label="骑兵" id="category"></optgroup>
+                            <option value="15">马超(赛季)</option>
+                            <option value="16">华雄</option>
+                            <option value="17">张角</option>
+                            <option value="18">马云禄</option>
+                            <option value="19">祝融夫人</option>
+                            <option value="20">张飞</option>
+                            <option value="21">徐庶</option>
+                            <option value="22">法正</option>
+                            <option value="23">张辽</option>
+                            <option value="24">曹操</option>
+                            <option value="25">荀彧</option>
+                            <option value="26">曹纯</option>
+                            <option value="27">郭嘉</option>
+                            </optgroup>
+                            <optgroup label="弓兵" id="category"></optgroup>
+                            <option value="28">吕布(群)</option>
+                            <option value="29">甄洛(群)</option>
+                            <option value="30">陈宫(群)</option>
+                            <option value="31">灵帝</option>
+                            <option value="32">诸葛亮</option>
+                            <option value="33">张春华</option>
+                            <option value="34">王朗</option>
+                            <option value="35">太史慈</option>
+                            <option value="36">孙权</option>
+                            <option value="37">吕蒙</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+                <th id="hero-group">
+                    <div class="heroselection">
+                        <select id="hero-select_9">
+                            <option value="" id="choose">-选择前锋-</option>
+                            <optgroup label="步兵" id="category"></optgroup>
+                            <option value="1">贾诩((群)</option>
+                            <option value="2">妲己</option>
+                            <option value="3">孟获</option>
+                            <option value="4">袁绍(汉)</option>
+                            <option value="5">刘备</option>
+                            <option value="6">赵云</option>
+                            <option value="7">庞统</option>
+                            <option value="8">黄忠</option>
+                            <option value="9">魏延</option>
+                            <option value="10">荀攸</option>
+                            <option value="11">司马懿</option>
+                            <option value="12">郝昭</option>
+                            <option value="13">张郃</option>
+                            <option value="14">黄盖</option>
+                            </optgroup>
+                            <optgroup label="骑兵" id="category"></optgroup>
+                            <option value="15">马超(赛季)</option>
+                            <option value="16">华雄</option>
+                            <option value="17">张角</option>
+                            <option value="18">马云禄</option>
+                            <option value="19">祝融夫人</option>
+                            <option value="20">张飞</option>
+                            <option value="21">徐庶</option>
+                            <option value="22">法正</option>
+                            <option value="23">张辽</option>
+                            <option value="24">曹操</option>
+                            <option value="25">荀彧</option>
+                            <option value="26">曹纯</option>
+                            <option value="27">郭嘉</option>
+                            </optgroup>
+                            <optgroup label="弓兵" id="category"></optgroup>
+                            <option value="28">吕布(群)</option>
+                            <option value="29">甄洛(群)</option>
+                            <option value="30">陈宫(群)</option>
+                            <option value="31">灵帝</option>
+                            <option value="32">诸葛亮</option>
+                            <option value="33">张春华</option>
+                            <option value="34">王朗</option>
+                            <option value="35">太史慈</option>
+                            <option value="36">孙权</option>
+                            <option value="37">吕蒙</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>战法</th>
+                <th id="skill-group">
+                    <div class="skillselection">
+                        <select id="skill-select_1">
+                            <option value="" id="choose">-选择战法-</option>
+                            <optgroup label="指挥" id="category"></optgroup>
+                            <option value="1">桃园结义</option>
+                            <option value="2">避其锋芒</option>
+                            <option value="3">大赏三军</option>
+                            <option value="4">无心恋战</option>
+                            <option value="5">反计之策</option>
+                            <option value="6">战必断金</option>
+                            <option value="7">攻其不备</option>
+                            <option value="8">重整旗鼓</option>
+                            <option value="9">不攻</option>
+                            <option value="10">始计</option>
+                            <option value="11">磐阵善守</option>
+                            <option value="12">反间</option>
+                            <option value="13">单骑救主</option>
+                            <option value="14">先驱突击</option>
+                            <option value="15">一夫当关</option>
+                            <option value="16">鸟云山兵</option>
+                            <option value="17">白刃</option>
+                            <option value="18">形兵之极</option>
+                            <option value="19">胜兵求战</option>
+                            <option value="20">锋矢</option>
+                            <option value="21">长兵方阵</option>
+                            </optgroup>
+                            <optgroup label="被动" id="category"></optgroup>
+                            <option value="22">步步为营</option>
+                            <option value="23">深谋远虑</option>
+                            <option value="24">健卒不殆</option>
+                            <option value="25">青囊秘要</option>
+                            <option value="26">回马</option>
+                            </optgroup>
+                            <optgroup label="主动" id="category"></optgroup>
+                            <option value="27">河内世泽</option>
+                            <option value="28">浑水摸鱼</option>
+                            <option value="29">一骑当千</option>
+                            <option value="30">十面埋伏</option>
+                            <option value="31">极火佐攻</option>
+                            <option value="32">绝水遏敌</option>
+                            <option value="33">人中吕布</option>
+                            <option value="34">焰焚箕轸</option>
+                            <option value="35">楚歌四起</option>
+                            <option value="36">掎角之势</option>
+                            <option value="37">雄兵破敌</option>
+                            <option value="38">折戟强攻</option>
+                            <option value="39">兼弱攻昧</option>
+                            <option value="40">伐谋</option>
+                            <option value="41">落雷</option>
+                            <option value="42">迷阵</option>
+                            </optgroup>
+                            </optgroup>
+                            <optgroup label="追击" id="category"></optgroup>
+                            <option value="43">温酒斩将</option>
+                            <option value="44">钝兵挫锐</option>
+                            <option value="45">怯心夺志</option>
+                            <option value="46">疾击其后</option>
+                            <option value="47">文伐</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+                <th id="skill-group">
+                    <div class="skillselection">
+                        <select id="skill-select_1">
+                            <option value="" id="choose">-选择战法-</option>
+                            <optgroup label="指挥" id="category"></optgroup>
+                            <option value="1">桃园结义</option>
+                            <option value="2">避其锋芒</option>
+                            <option value="3">大赏三军</option>
+                            <option value="4">无心恋战</option>
+                            <option value="5">反计之策</option>
+                            <option value="6">战必断金</option>
+                            <option value="7">攻其不备</option>
+                            <option value="8">重整旗鼓</option>
+                            <option value="9">不攻</option>
+                            <option value="10">始计</option>
+                            <option value="11">磐阵善守</option>
+                            <option value="12">反间</option>
+                            <option value="13">单骑救主</option>
+                            <option value="14">先驱突击</option>
+                            <option value="15">一夫当关</option>
+                            <option value="16">鸟云山兵</option>
+                            <option value="17">白刃</option>
+                            <option value="18">形兵之极</option>
+                            <option value="19">胜兵求战</option>
+                            <option value="20">锋矢</option>
+                            <option value="21">长兵方阵</option>
+                            </optgroup>
+                            <optgroup label="被动" id="category"></optgroup>
+                            <option value="22">步步为营</option>
+                            <option value="23">深谋远虑</option>
+                            <option value="24">健卒不殆</option>
+                            <option value="25">青囊秘要</option>
+                            <option value="26">回马</option>
+                            </optgroup>
+                            <optgroup label="主动" id="category"></optgroup>
+                            <option value="27">河内世泽</option>
+                            <option value="28">浑水摸鱼</option>
+                            <option value="29">一骑当千</option>
+                            <option value="30">十面埋伏</option>
+                            <option value="31">极火佐攻</option>
+                            <option value="32">绝水遏敌</option>
+                            <option value="33">人中吕布</option>
+                            <option value="34">焰焚箕轸</option>
+                            <option value="35">楚歌四起</option>
+                            <option value="36">掎角之势</option>
+                            <option value="37">雄兵破敌</option>
+                            <option value="38">折戟强攻</option>
+                            <option value="39">兼弱攻昧</option>
+                            <option value="40">伐谋</option>
+                            <option value="41">落雷</option>
+                            <option value="42">迷阵</option>
+                            </optgroup>
+                            </optgroup>
+                            <optgroup label="追击" id="category"></optgroup>
+                            <option value="43">温酒斩将</option>
+                            <option value="44">钝兵挫锐</option>
+                            <option value="45">怯心夺志</option>
+                            <option value="46">疾击其后</option>
+                            <option value="47">文伐</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+                <th id="skill-group">
+                    <div class="skillselection">
+                        <select id="skill-select_1">
+                            <option value="" id="choose">-选择战法-</option>
+                            <optgroup label="指挥" id="category"></optgroup>
+                            <option value="1">桃园结义</option>
+                            <option value="2">避其锋芒</option>
+                            <option value="3">大赏三军</option>
+                            <option value="4">无心恋战</option>
+                            <option value="5">反计之策</option>
+                            <option value="6">战必断金</option>
+                            <option value="7">攻其不备</option>
+                            <option value="8">重整旗鼓</option>
+                            <option value="9">不攻</option>
+                            <option value="10">始计</option>
+                            <option value="11">磐阵善守</option>
+                            <option value="12">反间</option>
+                            <option value="13">单骑救主</option>
+                            <option value="14">先驱突击</option>
+                            <option value="15">一夫当关</option>
+                            <option value="16">鸟云山兵</option>
+                            <option value="17">白刃</option>
+                            <option value="18">形兵之极</option>
+                            <option value="19">胜兵求战</option>
+                            <option value="20">锋矢</option>
+                            <option value="21">长兵方阵</option>
+                            </optgroup>
+                            <optgroup label="被动" id="category"></optgroup>
+                            <option value="22">步步为营</option>
+                            <option value="23">深谋远虑</option>
+                            <option value="24">健卒不殆</option>
+                            <option value="25">青囊秘要</option>
+                            <option value="26">回马</option>
+                            </optgroup>
+                            <optgroup label="主动" id="category"></optgroup>
+                            <option value="27">河内世泽</option>
+                            <option value="28">浑水摸鱼</option>
+                            <option value="29">一骑当千</option>
+                            <option value="30">十面埋伏</option>
+                            <option value="31">极火佐攻</option>
+                            <option value="32">绝水遏敌</option>
+                            <option value="33">人中吕布</option>
+                            <option value="34">焰焚箕轸</option>
+                            <option value="35">楚歌四起</option>
+                            <option value="36">掎角之势</option>
+                            <option value="37">雄兵破敌</option>
+                            <option value="38">折戟强攻</option>
+                            <option value="39">兼弱攻昧</option>
+                            <option value="40">伐谋</option>
+                            <option value="41">落雷</option>
+                            <option value="42">迷阵</option>
+                            </optgroup>
+                            </optgroup>
+                            <optgroup label="追击" id="category"></optgroup>
+                            <option value="43">温酒斩将</option>
+                            <option value="44">钝兵挫锐</option>
+                            <option value="45">怯心夺志</option>
+                            <option value="46">疾击其后</option>
+                            <option value="47">文伐</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>战法</th>
+                <th id="skill-group">
+                    <div class="skillselection">
+                        <select id="skill-select_1">
+                            <option value="" id="choose">-选择战法-</option>
+                            <optgroup label="指挥" id="category"></optgroup>
+                            <option value="1">桃园结义</option>
+                            <option value="2">避其锋芒</option>
+                            <option value="3">大赏三军</option>
+                            <option value="4">无心恋战</option>
+                            <option value="5">反计之策</option>
+                            <option value="6">战必断金</option>
+                            <option value="7">攻其不备</option>
+                            <option value="8">重整旗鼓</option>
+                            <option value="9">不攻</option>
+                            <option value="10">始计</option>
+                            <option value="11">磐阵善守</option>
+                            <option value="12">反间</option>
+                            <option value="13">单骑救主</option>
+                            <option value="14">先驱突击</option>
+                            <option value="15">一夫当关</option>
+                            <option value="16">鸟云山兵</option>
+                            <option value="17">白刃</option>
+                            <option value="18">形兵之极</option>
+                            <option value="19">胜兵求战</option>
+                            <option value="20">锋矢</option>
+                            <option value="21">长兵方阵</option>
+                            </optgroup>
+                            <optgroup label="被动" id="category"></optgroup>
+                            <option value="22">步步为营</option>
+                            <option value="23">深谋远虑</option>
+                            <option value="24">健卒不殆</option>
+                            <option value="25">青囊秘要</option>
+                            <option value="26">回马</option>
+                            </optgroup>
+                            <optgroup label="主动" id="category"></optgroup>
+                            <option value="27">河内世泽</option>
+                            <option value="28">浑水摸鱼</option>
+                            <option value="29">一骑当千</option>
+                            <option value="30">十面埋伏</option>
+                            <option value="31">极火佐攻</option>
+                            <option value="32">绝水遏敌</option>
+                            <option value="33">人中吕布</option>
+                            <option value="34">焰焚箕轸</option>
+                            <option value="35">楚歌四起</option>
+                            <option value="36">掎角之势</option>
+                            <option value="37">雄兵破敌</option>
+                            <option value="38">折戟强攻</option>
+                            <option value="39">兼弱攻昧</option>
+                            <option value="40">伐谋</option>
+                            <option value="41">落雷</option>
+                            <option value="42">迷阵</option>
+                            </optgroup>
+                            </optgroup>
+                            <optgroup label="追击" id="category"></optgroup>
+                            <option value="43">温酒斩将</option>
+                            <option value="44">钝兵挫锐</option>
+                            <option value="45">怯心夺志</option>
+                            <option value="46">疾击其后</option>
+                            <option value="47">文伐</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+                <th id="skill-group">
+                    <div class="skillselection">
+                        <select id="skill-select_1">
+                            <option value="" id="choose">-选择战法-</option>
+                            <optgroup label="指挥" id="category"></optgroup>
+                            <option value="1">桃园结义</option>
+                            <option value="2">避其锋芒</option>
+                            <option value="3">大赏三军</option>
+                            <option value="4">无心恋战</option>
+                            <option value="5">反计之策</option>
+                            <option value="6">战必断金</option>
+                            <option value="7">攻其不备</option>
+                            <option value="8">重整旗鼓</option>
+                            <option value="9">不攻</option>
+                            <option value="10">始计</option>
+                            <option value="11">磐阵善守</option>
+                            <option value="12">反间</option>
+                            <option value="13">单骑救主</option>
+                            <option value="14">先驱突击</option>
+                            <option value="15">一夫当关</option>
+                            <option value="16">鸟云山兵</option>
+                            <option value="17">白刃</option>
+                            <option value="18">形兵之极</option>
+                            <option value="19">胜兵求战</option>
+                            <option value="20">锋矢</option>
+                            <option value="21">长兵方阵</option>
+                            </optgroup>
+                            <optgroup label="被动" id="category"></optgroup>
+                            <option value="22">步步为营</option>
+                            <option value="23">深谋远虑</option>
+                            <option value="24">健卒不殆</option>
+                            <option value="25">青囊秘要</option>
+                            <option value="26">回马</option>
+                            </optgroup>
+                            <optgroup label="主动" id="category"></optgroup>
+                            <option value="27">河内世泽</option>
+                            <option value="28">浑水摸鱼</option>
+                            <option value="29">一骑当千</option>
+                            <option value="30">十面埋伏</option>
+                            <option value="31">极火佐攻</option>
+                            <option value="32">绝水遏敌</option>
+                            <option value="33">人中吕布</option>
+                            <option value="34">焰焚箕轸</option>
+                            <option value="35">楚歌四起</option>
+                            <option value="36">掎角之势</option>
+                            <option value="37">雄兵破敌</option>
+                            <option value="38">折戟强攻</option>
+                            <option value="39">兼弱攻昧</option>
+                            <option value="40">伐谋</option>
+                            <option value="41">落雷</option>
+                            <option value="42">迷阵</option>
+                            </optgroup>
+                            </optgroup>
+                            <optgroup label="追击" id="category"></optgroup>
+                            <option value="43">温酒斩将</option>
+                            <option value="44">钝兵挫锐</option>
+                            <option value="45">怯心夺志</option>
+                            <option value="46">疾击其后</option>
+                            <option value="47">文伐</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+                <th id="skill-group">
+                    <div class="skillselection">
+                        <select id="skill-select_1">
+                            <option value="" id="choose">-选择战法-</option>
+                            <optgroup label="指挥" id="category"></optgroup>
+                            <option value="1">桃园结义</option>
+                            <option value="2">避其锋芒</option>
+                            <option value="3">大赏三军</option>
+                            <option value="4">无心恋战</option>
+                            <option value="5">反计之策</option>
+                            <option value="6">战必断金</option>
+                            <option value="7">攻其不备</option>
+                            <option value="8">重整旗鼓</option>
+                            <option value="9">不攻</option>
+                            <option value="10">始计</option>
+                            <option value="11">磐阵善守</option>
+                            <option value="12">反间</option>
+                            <option value="13">单骑救主</option>
+                            <option value="14">先驱突击</option>
+                            <option value="15">一夫当关</option>
+                            <option value="16">鸟云山兵</option>
+                            <option value="17">白刃</option>
+                            <option value="18">形兵之极</option>
+                            <option value="19">胜兵求战</option>
+                            <option value="20">锋矢</option>
+                            <option value="21">长兵方阵</option>
+                            </optgroup>
+                            <optgroup label="被动" id="category"></optgroup>
+                            <option value="22">步步为营</option>
+                            <option value="23">深谋远虑</option>
+                            <option value="24">健卒不殆</option>
+                            <option value="25">青囊秘要</option>
+                            <option value="26">回马</option>
+                            </optgroup>
+                            <optgroup label="主动" id="category"></optgroup>
+                            <option value="27">河内世泽</option>
+                            <option value="28">浑水摸鱼</option>
+                            <option value="29">一骑当千</option>
+                            <option value="30">十面埋伏</option>
+                            <option value="31">极火佐攻</option>
+                            <option value="32">绝水遏敌</option>
+                            <option value="33">人中吕布</option>
+                            <option value="34">焰焚箕轸</option>
+                            <option value="35">楚歌四起</option>
+                            <option value="36">掎角之势</option>
+                            <option value="37">雄兵破敌</option>
+                            <option value="38">折戟强攻</option>
+                            <option value="39">兼弱攻昧</option>
+                            <option value="40">伐谋</option>
+                            <option value="41">落雷</option>
+                            <option value="42">迷阵</option>
+                            </optgroup>
+                            </optgroup>
+                            <optgroup label="追击" id="category"></optgroup>
+                            <option value="43">温酒斩将</option>
+                            <option value="44">钝兵挫锐</option>
+                            <option value="45">怯心夺志</option>
+                            <option value="46">疾击其后</option>
+                            <option value="47">文伐</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th id="team">队伍4</th>
+                <th id="hero-group">
+                    <div class="heroselection">
+                        <select id="hero-select_10">
+                            <option value="" id="choose">-选择大营-</option>
+                            <optgroup label="步兵" id="category"></optgroup>
+                            <option value="1">贾诩((群)</option>
+                            <option value="2">妲己</option>
+                            <option value="3">孟获</option>
+                            <option value="4">袁绍(汉)</option>
+                            <option value="5">刘备</option>
+                            <option value="6">赵云</option>
+                            <option value="7">庞统</option>
+                            <option value="8">黄忠</option>
+                            <option value="9">魏延</option>
+                            <option value="10">荀攸</option>
+                            <option value="11">司马懿</option>
+                            <option value="12">郝昭</option>
+                            <option value="13">张郃</option>
+                            <option value="14">黄盖</option>
+                            </optgroup>
+                            <optgroup label="骑兵" id="category"></optgroup>
+                            <option value="15">马超(赛季)</option>
+                            <option value="16">华雄</option>
+                            <option value="17">张角</option>
+                            <option value="18">马云禄</option>
+                            <option value="19">祝融夫人</option>
+                            <option value="20">张飞</option>
+                            <option value="21">徐庶</option>
+                            <option value="22">法正</option>
+                            <option value="23">张辽</option>
+                            <option value="24">曹操</option>
+                            <option value="25">荀彧</option>
+                            <option value="26">曹纯</option>
+                            <option value="27">郭嘉</option>
+                            </optgroup>
+                            <optgroup label="弓兵" id="category"></optgroup>
+                            <option value="28">吕布(群)</option>
+                            <option value="29">甄洛(群)</option>
+                            <option value="30">陈宫(群)</option>
+                            <option value="31">灵帝</option>
+                            <option value="32">诸葛亮</option>
+                            <option value="33">张春华</option>
+                            <option value="34">王朗</option>
+                            <option value="35">太史慈</option>
+                            <option value="36">孙权</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                <th id="hero-group">
+                    <div class="heroselection">
+                        <select id="hero-select_11">
+                            <option value="" id="choose">-选择中军-</option>
+                            <optgroup label="步兵" id="category"></optgroup>
+                            <option value="1">贾诩((群)</option>
+                            <option value="2">妲己</option>
+                            <option value="3">孟获</option>
+                            <option value="4">袁绍(汉)</option>
+                            <option value="5">刘备</option>
+                            <option value="6">赵云</option>
+                            <option value="7">庞统</option>
+                            <option value="8">黄忠</option>
+                            <option value="9">魏延</option>
+                            <option value="10">荀攸</option>
+                            <option value="11">司马懿</option>
+                            <option value="12">郝昭</option>
+                            <option value="13">张郃</option>
+                            <option value="14">黄盖</option>
+                            </optgroup>
+                            <optgroup label="骑兵" id="category"></optgroup>
+                            <option value="15">马超(赛季)</option>
+                            <option value="16">华雄</option>
+                            <option value="17">张角</option>
+                            <option value="18">马云禄</option>
+                            <option value="19">祝融夫人</option>
+                            <option value="20">张飞</option>
+                            <option value="21">徐庶</option>
+                            <option value="22">法正</option>
+                            <option value="23">张辽</option>
+                            <option value="24">曹操</option>
+                            <option value="25">荀彧</option>
+                            <option value="26">曹纯</option>
+                            <option value="27">郭嘉</option>
+                            </optgroup>
+                            <optgroup label="弓兵" id="category"></optgroup>
+                            <option value="28">吕布(群)</option>
+                            <option value="29">甄洛(群)</option>
+                            <option value="30">陈宫(群)</option>
+                            <option value="31">灵帝</option>
+                            <option value="32">诸葛亮</option>
+                            <option value="33">张春华</option>
+                            <option value="34">王朗</option>
+                            <option value="35">太史慈</option>
+                            <option value="36">孙权</option>
+                            <option value="37">吕蒙</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+                <th id="hero-group">
+                    <div class="heroselection">
+                        <select id="hero-select_12">
+                            <option value="" id="choose">-选择前锋-</option>
+                            <optgroup label="步兵" id="category"></optgroup>
+                            <option value="1">贾诩((群)</option>
+                            <option value="2">妲己</option>
+                            <option value="3">孟获</option>
+                            <option value="4">袁绍(汉)</option>
+                            <option value="5">刘备</option>
+                            <option value="6">赵云</option>
+                            <option value="7">庞统</option>
+                            <option value="8">黄忠</option>
+                            <option value="9">魏延</option>
+                            <option value="10">荀攸</option>
+                            <option value="11">司马懿</option>
+                            <option value="12">郝昭</option>
+                            <option value="13">张郃</option>
+                            <option value="14">黄盖</option>
+                            </optgroup>
+                            <optgroup label="骑兵" id="category"></optgroup>
+                            <option value="15">马超(赛季)</option>
+                            <option value="16">华雄</option>
+                            <option value="17">张角</option>
+                            <option value="18">马云禄</option>
+                            <option value="19">祝融夫人</option>
+                            <option value="20">张飞</option>
+                            <option value="21">徐庶</option>
+                            <option value="22">法正</option>
+                            <option value="23">张辽</option>
+                            <option value="24">曹操</option>
+                            <option value="25">荀彧</option>
+                            <option value="26">曹纯</option>
+                            <option value="27">郭嘉</option>
+                            </optgroup>
+                            <optgroup label="弓兵" id="category"></optgroup>
+                            <option value="28">吕布(群)</option>
+                            <option value="29">甄洛(群)</option>
+                            <option value="30">陈宫(群)</option>
+                            <option value="31">灵帝</option>
+                            <option value="32">诸葛亮</option>
+                            <option value="33">张春华</option>
+                            <option value="34">王朗</option>
+                            <option value="35">太史慈</option>
+                            <option value="36">孙权</option>
+                            <option value="37">吕蒙</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>战法</th>
+                <th id="skill-group">
+                    <div class="skillselection">
+                        <select id="skill-select_1">
+                            <option value="" id="choose">-选择战法-</option>
+                            <optgroup label="指挥" id="category"></optgroup>
+                            <option value="1">桃园结义</option>
+                            <option value="2">避其锋芒</option>
+                            <option value="3">大赏三军</option>
+                            <option value="4">无心恋战</option>
+                            <option value="5">反计之策</option>
+                            <option value="6">战必断金</option>
+                            <option value="7">攻其不备</option>
+                            <option value="8">重整旗鼓</option>
+                            <option value="9">不攻</option>
+                            <option value="10">始计</option>
+                            <option value="11">磐阵善守</option>
+                            <option value="12">反间</option>
+                            <option value="13">单骑救主</option>
+                            <option value="14">先驱突击</option>
+                            <option value="15">一夫当关</option>
+                            <option value="16">鸟云山兵</option>
+                            <option value="17">白刃</option>
+                            <option value="18">形兵之极</option>
+                            <option value="19">胜兵求战</option>
+                            <option value="20">锋矢</option>
+                            <option value="21">长兵方阵</option>
+                            </optgroup>
+                            <optgroup label="被动" id="category"></optgroup>
+                            <option value="22">步步为营</option>
+                            <option value="23">深谋远虑</option>
+                            <option value="24">健卒不殆</option>
+                            <option value="25">青囊秘要</option>
+                            <option value="26">回马</option>
+                            </optgroup>
+                            <optgroup label="主动" id="category"></optgroup>
+                            <option value="27">河内世泽</option>
+                            <option value="28">浑水摸鱼</option>
+                            <option value="29">一骑当千</option>
+                            <option value="30">十面埋伏</option>
+                            <option value="31">极火佐攻</option>
+                            <option value="32">绝水遏敌</option>
+                            <option value="33">人中吕布</option>
+                            <option value="34">焰焚箕轸</option>
+                            <option value="35">楚歌四起</option>
+                            <option value="36">掎角之势</option>
+                            <option value="37">雄兵破敌</option>
+                            <option value="38">折戟强攻</option>
+                            <option value="39">兼弱攻昧</option>
+                            <option value="40">伐谋</option>
+                            <option value="41">落雷</option>
+                            <option value="42">迷阵</option>
+                            </optgroup>
+                            </optgroup>
+                            <optgroup label="追击" id="category"></optgroup>
+                            <option value="43">温酒斩将</option>
+                            <option value="44">钝兵挫锐</option>
+                            <option value="45">怯心夺志</option>
+                            <option value="46">疾击其后</option>
+                            <option value="47">文伐</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+                <th id="skill-group">
+                    <div class="skillselection">
+                        <select id="skill-select_1">
+                            <option value="" id="choose">-选择战法-</option>
+                            <optgroup label="指挥" id="category"></optgroup>
+                            <option value="1">桃园结义</option>
+                            <option value="2">避其锋芒</option>
+                            <option value="3">大赏三军</option>
+                            <option value="4">无心恋战</option>
+                            <option value="5">反计之策</option>
+                            <option value="6">战必断金</option>
+                            <option value="7">攻其不备</option>
+                            <option value="8">重整旗鼓</option>
+                            <option value="9">不攻</option>
+                            <option value="10">始计</option>
+                            <option value="11">磐阵善守</option>
+                            <option value="12">反间</option>
+                            <option value="13">单骑救主</option>
+                            <option value="14">先驱突击</option>
+                            <option value="15">一夫当关</option>
+                            <option value="16">鸟云山兵</option>
+                            <option value="17">白刃</option>
+                            <option value="18">形兵之极</option>
+                            <option value="19">胜兵求战</option>
+                            <option value="20">锋矢</option>
+                            <option value="21">长兵方阵</option>
+                            </optgroup>
+                            <optgroup label="被动" id="category"></optgroup>
+                            <option value="22">步步为营</option>
+                            <option value="23">深谋远虑</option>
+                            <option value="24">健卒不殆</option>
+                            <option value="25">青囊秘要</option>
+                            <option value="26">回马</option>
+                            </optgroup>
+                            <optgroup label="主动" id="category"></optgroup>
+                            <option value="27">河内世泽</option>
+                            <option value="28">浑水摸鱼</option>
+                            <option value="29">一骑当千</option>
+                            <option value="30">十面埋伏</option>
+                            <option value="31">极火佐攻</option>
+                            <option value="32">绝水遏敌</option>
+                            <option value="33">人中吕布</option>
+                            <option value="34">焰焚箕轸</option>
+                            <option value="35">楚歌四起</option>
+                            <option value="36">掎角之势</option>
+                            <option value="37">雄兵破敌</option>
+                            <option value="38">折戟强攻</option>
+                            <option value="39">兼弱攻昧</option>
+                            <option value="40">伐谋</option>
+                            <option value="41">落雷</option>
+                            <option value="42">迷阵</option>
+                            </optgroup>
+                            </optgroup>
+                            <optgroup label="追击" id="category"></optgroup>
+                            <option value="43">温酒斩将</option>
+                            <option value="44">钝兵挫锐</option>
+                            <option value="45">怯心夺志</option>
+                            <option value="46">疾击其后</option>
+                            <option value="47">文伐</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+                <th id="skill-group">
+                    <div class="skillselection">
+                        <select id="skill-select_1">
+                            <option value="" id="choose">-选择战法-</option>
+                            <optgroup label="指挥" id="category"></optgroup>
+                            <option value="1">桃园结义</option>
+                            <option value="2">避其锋芒</option>
+                            <option value="3">大赏三军</option>
+                            <option value="4">无心恋战</option>
+                            <option value="5">反计之策</option>
+                            <option value="6">战必断金</option>
+                            <option value="7">攻其不备</option>
+                            <option value="8">重整旗鼓</option>
+                            <option value="9">不攻</option>
+                            <option value="10">始计</option>
+                            <option value="11">磐阵善守</option>
+                            <option value="12">反间</option>
+                            <option value="13">单骑救主</option>
+                            <option value="14">先驱突击</option>
+                            <option value="15">一夫当关</option>
+                            <option value="16">鸟云山兵</option>
+                            <option value="17">白刃</option>
+                            <option value="18">形兵之极</option>
+                            <option value="19">胜兵求战</option>
+                            <option value="20">锋矢</option>
+                            <option value="21">长兵方阵</option>
+                            </optgroup>
+                            <optgroup label="被动" id="category"></optgroup>
+                            <option value="22">步步为营</option>
+                            <option value="23">深谋远虑</option>
+                            <option value="24">健卒不殆</option>
+                            <option value="25">青囊秘要</option>
+                            <option value="26">回马</option>
+                            </optgroup>
+                            <optgroup label="主动" id="category"></optgroup>
+                            <option value="27">河内世泽</option>
+                            <option value="28">浑水摸鱼</option>
+                            <option value="29">一骑当千</option>
+                            <option value="30">十面埋伏</option>
+                            <option value="31">极火佐攻</option>
+                            <option value="32">绝水遏敌</option>
+                            <option value="33">人中吕布</option>
+                            <option value="34">焰焚箕轸</option>
+                            <option value="35">楚歌四起</option>
+                            <option value="36">掎角之势</option>
+                            <option value="37">雄兵破敌</option>
+                            <option value="38">折戟强攻</option>
+                            <option value="39">兼弱攻昧</option>
+                            <option value="40">伐谋</option>
+                            <option value="41">落雷</option>
+                            <option value="42">迷阵</option>
+                            </optgroup>
+                            </optgroup>
+                            <optgroup label="追击" id="category"></optgroup>
+                            <option value="43">温酒斩将</option>
+                            <option value="44">钝兵挫锐</option>
+                            <option value="45">怯心夺志</option>
+                            <option value="46">疾击其后</option>
+                            <option value="47">文伐</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>战法</th>
+                <th id="skill-group">
+                    <div class="skillselection">
+                        <select id="skill-select_1">
+                            <option value="" id="choose">-选择战法-</option>
+                            <optgroup label="指挥" id="category"></optgroup>
+                            <option value="1">桃园结义</option>
+                            <option value="2">避其锋芒</option>
+                            <option value="3">大赏三军</option>
+                            <option value="4">无心恋战</option>
+                            <option value="5">反计之策</option>
+                            <option value="6">战必断金</option>
+                            <option value="7">攻其不备</option>
+                            <option value="8">重整旗鼓</option>
+                            <option value="9">不攻</option>
+                            <option value="10">始计</option>
+                            <option value="11">磐阵善守</option>
+                            <option value="12">反间</option>
+                            <option value="13">单骑救主</option>
+                            <option value="14">先驱突击</option>
+                            <option value="15">一夫当关</option>
+                            <option value="16">鸟云山兵</option>
+                            <option value="17">白刃</option>
+                            <option value="18">形兵之极</option>
+                            <option value="19">胜兵求战</option>
+                            <option value="20">锋矢</option>
+                            <option value="21">长兵方阵</option>
+                            </optgroup>
+                            <optgroup label="被动" id="category"></optgroup>
+                            <option value="22">步步为营</option>
+                            <option value="23">深谋远虑</option>
+                            <option value="24">健卒不殆</option>
+                            <option value="25">青囊秘要</option>
+                            <option value="26">回马</option>
+                            </optgroup>
+                            <optgroup label="主动" id="category"></optgroup>
+                            <option value="27">河内世泽</option>
+                            <option value="28">浑水摸鱼</option>
+                            <option value="29">一骑当千</option>
+                            <option value="30">十面埋伏</option>
+                            <option value="31">极火佐攻</option>
+                            <option value="32">绝水遏敌</option>
+                            <option value="33">人中吕布</option>
+                            <option value="34">焰焚箕轸</option>
+                            <option value="35">楚歌四起</option>
+                            <option value="36">掎角之势</option>
+                            <option value="37">雄兵破敌</option>
+                            <option value="38">折戟强攻</option>
+                            <option value="39">兼弱攻昧</option>
+                            <option value="40">伐谋</option>
+                            <option value="41">落雷</option>
+                            <option value="42">迷阵</option>
+                            </optgroup>
+                            </optgroup>
+                            <optgroup label="追击" id="category"></optgroup>
+                            <option value="43">温酒斩将</option>
+                            <option value="44">钝兵挫锐</option>
+                            <option value="45">怯心夺志</option>
+                            <option value="46">疾击其后</option>
+                            <option value="47">文伐</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+                <th id="skill-group">
+                    <div class="skillselection">
+                        <select id="skill-select_1">
+                            <option value="" id="choose">-选择战法-</option>
+                            <optgroup label="指挥" id="category"></optgroup>
+                            <option value="1">桃园结义</option>
+                            <option value="2">避其锋芒</option>
+                            <option value="3">大赏三军</option>
+                            <option value="4">无心恋战</option>
+                            <option value="5">反计之策</option>
+                            <option value="6">战必断金</option>
+                            <option value="7">攻其不备</option>
+                            <option value="8">重整旗鼓</option>
+                            <option value="9">不攻</option>
+                            <option value="10">始计</option>
+                            <option value="11">磐阵善守</option>
+                            <option value="12">反间</option>
+                            <option value="13">单骑救主</option>
+                            <option value="14">先驱突击</option>
+                            <option value="15">一夫当关</option>
+                            <option value="16">鸟云山兵</option>
+                            <option value="17">白刃</option>
+                            <option value="18">形兵之极</option>
+                            <option value="19">胜兵求战</option>
+                            <option value="20">锋矢</option>
+                            <option value="21">长兵方阵</option>
+                            </optgroup>
+                            <optgroup label="被动" id="category"></optgroup>
+                            <option value="22">步步为营</option>
+                            <option value="23">深谋远虑</option>
+                            <option value="24">健卒不殆</option>
+                            <option value="25">青囊秘要</option>
+                            <option value="26">回马</option>
+                            </optgroup>
+                            <optgroup label="主动" id="category"></optgroup>
+                            <option value="27">河内世泽</option>
+                            <option value="28">浑水摸鱼</option>
+                            <option value="29">一骑当千</option>
+                            <option value="30">十面埋伏</option>
+                            <option value="31">极火佐攻</option>
+                            <option value="32">绝水遏敌</option>
+                            <option value="33">人中吕布</option>
+                            <option value="34">焰焚箕轸</option>
+                            <option value="35">楚歌四起</option>
+                            <option value="36">掎角之势</option>
+                            <option value="37">雄兵破敌</option>
+                            <option value="38">折戟强攻</option>
+                            <option value="39">兼弱攻昧</option>
+                            <option value="40">伐谋</option>
+                            <option value="41">落雷</option>
+                            <option value="42">迷阵</option>
+                            </optgroup>
+                            </optgroup>
+                            <optgroup label="追击" id="category"></optgroup>
+                            <option value="43">温酒斩将</option>
+                            <option value="44">钝兵挫锐</option>
+                            <option value="45">怯心夺志</option>
+                            <option value="46">疾击其后</option>
+                            <option value="47">文伐</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+                <th id="skill-group">
+                    <div class="skillselection">
+                        <select id="skill-select_1">
+                            <option value="" id="choose">-选择战法-</option>
+                            <optgroup label="指挥" id="category"></optgroup>
+                            <option value="1">桃园结义</option>
+                            <option value="2">避其锋芒</option>
+                            <option value="3">大赏三军</option>
+                            <option value="4">无心恋战</option>
+                            <option value="5">反计之策</option>
+                            <option value="6">战必断金</option>
+                            <option value="7">攻其不备</option>
+                            <option value="8">重整旗鼓</option>
+                            <option value="9">不攻</option>
+                            <option value="10">始计</option>
+                            <option value="11">磐阵善守</option>
+                            <option value="12">反间</option>
+                            <option value="13">单骑救主</option>
+                            <option value="14">先驱突击</option>
+                            <option value="15">一夫当关</option>
+                            <option value="16">鸟云山兵</option>
+                            <option value="17">白刃</option>
+                            <option value="18">形兵之极</option>
+                            <option value="19">胜兵求战</option>
+                            <option value="20">锋矢</option>
+                            <option value="21">长兵方阵</option>
+                            </optgroup>
+                            <optgroup label="被动" id="category"></optgroup>
+                            <option value="22">步步为营</option>
+                            <option value="23">深谋远虑</option>
+                            <option value="24">健卒不殆</option>
+                            <option value="25">青囊秘要</option>
+                            <option value="26">回马</option>
+                            </optgroup>
+                            <optgroup label="主动" id="category"></optgroup>
+                            <option value="27">河内世泽</option>
+                            <option value="28">浑水摸鱼</option>
+                            <option value="29">一骑当千</option>
+                            <option value="30">十面埋伏</option>
+                            <option value="31">极火佐攻</option>
+                            <option value="32">绝水遏敌</option>
+                            <option value="33">人中吕布</option>
+                            <option value="34">焰焚箕轸</option>
+                            <option value="35">楚歌四起</option>
+                            <option value="36">掎角之势</option>
+                            <option value="37">雄兵破敌</option>
+                            <option value="38">折戟强攻</option>
+                            <option value="39">兼弱攻昧</option>
+                            <option value="40">伐谋</option>
+                            <option value="41">落雷</option>
+                            <option value="42">迷阵</option>
+                            </optgroup>
+                            </optgroup>
+                            <optgroup label="追击" id="category"></optgroup>
+                            <option value="43">温酒斩将</option>
+                            <option value="44">钝兵挫锐</option>
+                            <option value="45">怯心夺志</option>
+                            <option value="46">疾击其后</option>
+                            <option value="47">文伐</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th id="team">队伍5</th>
+                <th id="hero-group">
+                    <div class="heroselection">
+                        <select id="hero-select_13">
+                            <option value="" id="choose">-选择大营-</option>
+                            <optgroup label="步兵" id="category"></optgroup>
+                            <option value="1">贾诩((群)</option>
+                            <option value="2">妲己</option>
+                            <option value="3">孟获</option>
+                            <option value="4">袁绍(汉)</option>
+                            <option value="5">刘备</option>
+                            <option value="6">赵云</option>
+                            <option value="7">庞统</option>
+                            <option value="8">黄忠</option>
+                            <option value="9">魏延</option>
+                            <option value="10">荀攸</option>
+                            <option value="11">司马懿</option>
+                            <option value="12">郝昭</option>
+                            <option value="13">张郃</option>
+                            <option value="14">黄盖</option>
+                            </optgroup>
+                            <optgroup label="骑兵" id="category"></optgroup>
+                            <option value="15">马超(赛季)</option>
+                            <option value="16">华雄</option>
+                            <option value="17">张角</option>
+                            <option value="18">马云禄</option>
+                            <option value="19">祝融夫人</option>
+                            <option value="20">张飞</option>
+                            <option value="21">徐庶</option>
+                            <option value="22">法正</option>
+                            <option value="23">张辽</option>
+                            <option value="24">曹操</option>
+                            <option value="25">荀彧</option>
+                            <option value="26">曹纯</option>
+                            <option value="27">郭嘉</option>
+                            </optgroup>
+                            <optgroup label="弓兵" id="category"></optgroup>
+                            <option value="28">吕布(群)</option>
+                            <option value="29">甄洛(群)</option>
+                            <option value="30">陈宫(群)</option>
+                            <option value="31">灵帝</option>
+                            <option value="32">诸葛亮</option>
+                            <option value="33">张春华</option>
+                            <option value="34">王朗</option>
+                            <option value="35">太史慈</option>
+                            <option value="36">孙权</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+                <th id="hero-group">
+                    <div class="heroselection">
+                        <select id="hero-select_14">
+                            <option value="" id="choose">-选择中军-</option>
+                            <optgroup label="步兵" id="category"></optgroup>
+                            <option value="1">贾诩((群)</option>
+                            <option value="2">妲己</option>
+                            <option value="3">孟获</option>
+                            <option value="4">袁绍(汉)</option>
+                            <option value="5">刘备</option>
+                            <option value="6">赵云</option>
+                            <option value="7">庞统</option>
+                            <option value="8">黄忠</option>
+                            <option value="9">魏延</option>
+                            <option value="10">荀攸</option>
+                            <option value="11">司马懿</option>
+                            <option value="12">郝昭</option>
+                            <option value="13">张郃</option>
+                            <option value="14">黄盖</option>
+                            </optgroup>
+                            <optgroup label="骑兵" id="category"></optgroup>
+                            <option value="15">马超(赛季)</option>
+                            <option value="16">华雄</option>
+                            <option value="17">张角</option>
+                            <option value="18">马云禄</option>
+                            <option value="19">祝融夫人</option>
+                            <option value="20">张飞</option>
+                            <option value="21">徐庶</option>
+                            <option value="22">法正</option>
+                            <option value="23">张辽</option>
+                            <option value="24">曹操</option>
+                            <option value="25">荀彧</option>
+                            <option value="26">曹纯</option>
+                            <option value="27">郭嘉</option>
+                            </optgroup>
+                            <optgroup label="弓兵" id="category"></optgroup>
+                            <option value="28">吕布(群)</option>
+                            <option value="29">甄洛(群)</option>
+                            <option value="30">陈宫(群)</option>
+                            <option value="31">灵帝</option>
+                            <option value="32">诸葛亮</option>
+                            <option value="33">张春华</option>
+                            <option value="34">王朗</option>
+                            <option value="35">太史慈</option>
+                            <option value="36">孙权</option>
+                            <option value="37">吕蒙</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+                <th id="hero-group">
+                    <div class="heroselection">
+                        <select id="hero-select_15">
+                            <option value="" id="choose">-选择前锋-</option>
+                            <optgroup label="步兵" id="category"></optgroup>
+                            <option value="1">贾诩((群)</option>
+                            <option value="2">妲己</option>
+                            <option value="3">孟获</option>
+                            <option value="4">袁绍(汉)</option>
+                            <option value="5">刘备</option>
+                            <option value="6">赵云</option>
+                            <option value="7">庞统</option>
+                            <option value="8">黄忠</option>
+                            <option value="9">魏延</option>
+                            <option value="10">荀攸</option>
+                            <option value="11">司马懿</option>
+                            <option value="12">郝昭</option>
+                            <option value="13">张郃</option>
+                            <option value="14">黄盖</option>
+                            </optgroup>
+                            <optgroup label="骑兵" id="category"></optgroup>
+                            <option value="15">马超(赛季)</option>
+                            <option value="16">华雄</option>
+                            <option value="17">张角</option>
+                            <option value="18">马云禄</option>
+                            <option value="19">祝融夫人</option>
+                            <option value="20">张飞</option>
+                            <option value="21">徐庶</option>
+                            <option value="22">法正</option>
+                            <option value="23">张辽</option>
+                            <option value="24">曹操</option>
+                            <option value="25">荀彧</option>
+                            <option value="26">曹纯</option>
+                            <option value="27">郭嘉</option>
+                            </optgroup>
+                            <optgroup label="弓兵" id="category"></optgroup>
+                            <option value="28">吕布(群)</option>
+                            <option value="29">甄洛(群)</option>
+                            <option value="30">陈宫(群)</option>
+                            <option value="31">灵帝</option>
+                            <option value="32">诸葛亮</option>
+                            <option value="33">张春华</option>
+                            <option value="34">王朗</option>
+                            <option value="35">太史慈</option>
+                            <option value="36">孙权</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>战法</th>
+                <th id="skill-group">
+                    <div class="skillselection">
+                        <select id="skill-select_1">
+                            <option value="" id="choose">-选择战法-</option>
+                            <optgroup label="指挥" id="category"></optgroup>
+                            <option value="1">桃园结义</option>
+                            <option value="2">避其锋芒</option>
+                            <option value="3">大赏三军</option>
+                            <option value="4">无心恋战</option>
+                            <option value="5">反计之策</option>
+                            <option value="6">战必断金</option>
+                            <option value="7">攻其不备</option>
+                            <option value="8">重整旗鼓</option>
+                            <option value="9">不攻</option>
+                            <option value="10">始计</option>
+                            <option value="11">磐阵善守</option>
+                            <option value="12">反间</option>
+                            <option value="13">单骑救主</option>
+                            <option value="14">先驱突击</option>
+                            <option value="15">一夫当关</option>
+                            <option value="16">鸟云山兵</option>
+                            <option value="17">白刃</option>
+                            <option value="18">形兵之极</option>
+                            <option value="19">胜兵求战</option>
+                            <option value="20">锋矢</option>
+                            <option value="21">长兵方阵</option>
+                            </optgroup>
+                            <optgroup label="被动" id="category"></optgroup>
+                            <option value="22">步步为营</option>
+                            <option value="23">深谋远虑</option>
+                            <option value="24">健卒不殆</option>
+                            <option value="25">青囊秘要</option>
+                            <option value="26">回马</option>
+                            </optgroup>
+                            <optgroup label="主动" id="category"></optgroup>
+                            <option value="27">河内世泽</option>
+                            <option value="28">浑水摸鱼</option>
+                            <option value="29">一骑当千</option>
+                            <option value="30">十面埋伏</option>
+                            <option value="31">极火佐攻</option>
+                            <option value="32">绝水遏敌</option>
+                            <option value="33">人中吕布</option>
+                            <option value="34">焰焚箕轸</option>
+                            <option value="35">楚歌四起</option>
+                            <option value="36">掎角之势</option>
+                            <option value="37">雄兵破敌</option>
+                            <option value="38">折戟强攻</option>
+                            <option value="39">兼弱攻昧</option>
+                            <option value="40">伐谋</option>
+                            <option value="41">落雷</option>
+                            <option value="42">迷阵</option>
+                            </optgroup>
+                            </optgroup>
+                            <optgroup label="追击" id="category"></optgroup>
+                            <option value="43">温酒斩将</option>
+                            <option value="44">钝兵挫锐</option>
+                            <option value="45">怯心夺志</option>
+                            <option value="46">疾击其后</option>
+                            <option value="47">文伐</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+                <th id="skill-group">
+                    <div class="skillselection">
+                        <select id="skill-select_1">
+                            <option value="" id="choose">-选择战法-</option>
+                            <optgroup label="指挥" id="category"></optgroup>
+                            <option value="1">桃园结义</option>
+                            <option value="2">避其锋芒</option>
+                            <option value="3">大赏三军</option>
+                            <option value="4">无心恋战</option>
+                            <option value="5">反计之策</option>
+                            <option value="6">战必断金</option>
+                            <option value="7">攻其不备</option>
+                            <option value="8">重整旗鼓</option>
+                            <option value="9">不攻</option>
+                            <option value="10">始计</option>
+                            <option value="11">磐阵善守</option>
+                            <option value="12">反间</option>
+                            <option value="13">单骑救主</option>
+                            <option value="14">先驱突击</option>
+                            <option value="15">一夫当关</option>
+                            <option value="16">鸟云山兵</option>
+                            <option value="17">白刃</option>
+                            <option value="18">形兵之极</option>
+                            <option value="19">胜兵求战</option>
+                            <option value="20">锋矢</option>
+                            <option value="21">长兵方阵</option>
+                            </optgroup>
+                            <optgroup label="被动" id="category"></optgroup>
+                            <option value="22">步步为营</option>
+                            <option value="23">深谋远虑</option>
+                            <option value="24">健卒不殆</option>
+                            <option value="25">青囊秘要</option>
+                            <option value="26">回马</option>
+                            </optgroup>
+                            <optgroup label="主动" id="category"></optgroup>
+                            <option value="27">河内世泽</option>
+                            <option value="28">浑水摸鱼</option>
+                            <option value="29">一骑当千</option>
+                            <option value="30">十面埋伏</option>
+                            <option value="31">极火佐攻</option>
+                            <option value="32">绝水遏敌</option>
+                            <option value="33">人中吕布</option>
+                            <option value="34">焰焚箕轸</option>
+                            <option value="35">楚歌四起</option>
+                            <option value="36">掎角之势</option>
+                            <option value="37">雄兵破敌</option>
+                            <option value="38">折戟强攻</option>
+                            <option value="39">兼弱攻昧</option>
+                            <option value="40">伐谋</option>
+                            <option value="41">落雷</option>
+                            <option value="42">迷阵</option>
+                            </optgroup>
+                            </optgroup>
+                            <optgroup label="追击" id="category"></optgroup>
+                            <option value="43">温酒斩将</option>
+                            <option value="44">钝兵挫锐</option>
+                            <option value="45">怯心夺志</option>
+                            <option value="46">疾击其后</option>
+                            <option value="47">文伐</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+                <th id="skill-group">
+                    <div class="skillselection">
+                        <select id="skill-select_1">
+                            <option value="" id="choose">-选择战法-</option>
+                            <optgroup label="指挥" id="category"></optgroup>
+                            <option value="1">桃园结义</option>
+                            <option value="2">避其锋芒</option>
+                            <option value="3">大赏三军</option>
+                            <option value="4">无心恋战</option>
+                            <option value="5">反计之策</option>
+                            <option value="6">战必断金</option>
+                            <option value="7">攻其不备</option>
+                            <option value="8">重整旗鼓</option>
+                            <option value="9">不攻</option>
+                            <option value="10">始计</option>
+                            <option value="11">磐阵善守</option>
+                            <option value="12">反间</option>
+                            <option value="13">单骑救主</option>
+                            <option value="14">先驱突击</option>
+                            <option value="15">一夫当关</option>
+                            <option value="16">鸟云山兵</option>
+                            <option value="17">白刃</option>
+                            <option value="18">形兵之极</option>
+                            <option value="19">胜兵求战</option>
+                            <option value="20">锋矢</option>
+                            <option value="21">长兵方阵</option>
+                            </optgroup>
+                            <optgroup label="被动" id="category"></optgroup>
+                            <option value="22">步步为营</option>
+                            <option value="23">深谋远虑</option>
+                            <option value="24">健卒不殆</option>
+                            <option value="25">青囊秘要</option>
+                            <option value="26">回马</option>
+                            </optgroup>
+                            <optgroup label="主动" id="category"></optgroup>
+                            <option value="27">河内世泽</option>
+                            <option value="28">浑水摸鱼</option>
+                            <option value="29">一骑当千</option>
+                            <option value="30">十面埋伏</option>
+                            <option value="31">极火佐攻</option>
+                            <option value="32">绝水遏敌</option>
+                            <option value="33">人中吕布</option>
+                            <option value="34">焰焚箕轸</option>
+                            <option value="35">楚歌四起</option>
+                            <option value="36">掎角之势</option>
+                            <option value="37">雄兵破敌</option>
+                            <option value="38">折戟强攻</option>
+                            <option value="39">兼弱攻昧</option>
+                            <option value="40">伐谋</option>
+                            <option value="41">落雷</option>
+                            <option value="42">迷阵</option>
+                            </optgroup>
+                            </optgroup>
+                            <optgroup label="追击" id="category"></optgroup>
+                            <option value="43">温酒斩将</option>
+                            <option value="44">钝兵挫锐</option>
+                            <option value="45">怯心夺志</option>
+                            <option value="46">疾击其后</option>
+                            <option value="47">文伐</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>战法</th>
+                <th id="skill-group">
+                    <div class="skillselection">
+                        <select id="skill-select_1">
+                            <option value="" id="choose">-选择战法-</option>
+                            <optgroup label="指挥" id="category"></optgroup>
+                            <option value="1">桃园结义</option>
+                            <option value="2">避其锋芒</option>
+                            <option value="3">大赏三军</option>
+                            <option value="4">无心恋战</option>
+                            <option value="5">反计之策</option>
+                            <option value="6">战必断金</option>
+                            <option value="7">攻其不备</option>
+                            <option value="8">重整旗鼓</option>
+                            <option value="9">不攻</option>
+                            <option value="10">始计</option>
+                            <option value="11">磐阵善守</option>
+                            <option value="12">反间</option>
+                            <option value="13">单骑救主</option>
+                            <option value="14">先驱突击</option>
+                            <option value="15">一夫当关</option>
+                            <option value="16">鸟云山兵</option>
+                            <option value="17">白刃</option>
+                            <option value="18">形兵之极</option>
+                            <option value="19">胜兵求战</option>
+                            <option value="20">锋矢</option>
+                            <option value="21">长兵方阵</option>
+                            </optgroup>
+                            <optgroup label="被动" id="category"></optgroup>
+                            <option value="22">步步为营</option>
+                            <option value="23">深谋远虑</option>
+                            <option value="24">健卒不殆</option>
+                            <option value="25">青囊秘要</option>
+                            <option value="26">回马</option>
+                            </optgroup>
+                            <optgroup label="主动" id="category"></optgroup>
+                            <option value="27">河内世泽</option>
+                            <option value="28">浑水摸鱼</option>
+                            <option value="29">一骑当千</option>
+                            <option value="30">十面埋伏</option>
+                            <option value="31">极火佐攻</option>
+                            <option value="32">绝水遏敌</option>
+                            <option value="33">人中吕布</option>
+                            <option value="34">焰焚箕轸</option>
+                            <option value="35">楚歌四起</option>
+                            <option value="36">掎角之势</option>
+                            <option value="37">雄兵破敌</option>
+                            <option value="38">折戟强攻</option>
+                            <option value="39">兼弱攻昧</option>
+                            <option value="40">伐谋</option>
+                            <option value="41">落雷</option>
+                            <option value="42">迷阵</option>
+                            </optgroup>
+                            </optgroup>
+                            <optgroup label="追击" id="category"></optgroup>
+                            <option value="43">温酒斩将</option>
+                            <option value="44">钝兵挫锐</option>
+                            <option value="45">怯心夺志</option>
+                            <option value="46">疾击其后</option>
+                            <option value="47">文伐</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+                <th id="skill-group">
+                    <div class="skillselection">
+                        <select id="skill-select_1">
+                            <option value="" id="choose">-选择战法-</option>
+                            <optgroup label="指挥" id="category"></optgroup>
+                            <option value="1">桃园结义</option>
+                            <option value="2">避其锋芒</option>
+                            <option value="3">大赏三军</option>
+                            <option value="4">无心恋战</option>
+                            <option value="5">反计之策</option>
+                            <option value="6">战必断金</option>
+                            <option value="7">攻其不备</option>
+                            <option value="8">重整旗鼓</option>
+                            <option value="9">不攻</option>
+                            <option value="10">始计</option>
+                            <option value="11">磐阵善守</option>
+                            <option value="12">反间</option>
+                            <option value="13">单骑救主</option>
+                            <option value="14">先驱突击</option>
+                            <option value="15">一夫当关</option>
+                            <option value="16">鸟云山兵</option>
+                            <option value="17">白刃</option>
+                            <option value="18">形兵之极</option>
+                            <option value="19">胜兵求战</option>
+                            <option value="20">锋矢</option>
+                            <option value="21">长兵方阵</option>
+                            </optgroup>
+                            <optgroup label="被动" id="category"></optgroup>
+                            <option value="22">步步为营</option>
+                            <option value="23">深谋远虑</option>
+                            <option value="24">健卒不殆</option>
+                            <option value="25">青囊秘要</option>
+                            <option value="26">回马</option>
+                            </optgroup>
+                            <optgroup label="主动" id="category"></optgroup>
+                            <option value="27">河内世泽</option>
+                            <option value="28">浑水摸鱼</option>
+                            <option value="29">一骑当千</option>
+                            <option value="30">十面埋伏</option>
+                            <option value="31">极火佐攻</option>
+                            <option value="32">绝水遏敌</option>
+                            <option value="33">人中吕布</option>
+                            <option value="34">焰焚箕轸</option>
+                            <option value="35">楚歌四起</option>
+                            <option value="36">掎角之势</option>
+                            <option value="37">雄兵破敌</option>
+                            <option value="38">折戟强攻</option>
+                            <option value="39">兼弱攻昧</option>
+                            <option value="40">伐谋</option>
+                            <option value="41">落雷</option>
+                            <option value="42">迷阵</option>
+                            </optgroup>
+                            </optgroup>
+                            <optgroup label="追击" id="category"></optgroup>
+                            <option value="43">温酒斩将</option>
+                            <option value="44">钝兵挫锐</option>
+                            <option value="45">怯心夺志</option>
+                            <option value="46">疾击其后</option>
+                            <option value="47">文伐</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+                <th id="skill-group">
+                    <div class="skillselection">
+                        <select id="skill-select_1">
+                            <option value="" id="choose">-选择战法-</option>
+                            <optgroup label="指挥" id="category"></optgroup>
+                            <option value="1">桃园结义</option>
+                            <option value="2">避其锋芒</option>
+                            <option value="3">大赏三军</option>
+                            <option value="4">无心恋战</option>
+                            <option value="5">反计之策</option>
+                            <option value="6">战必断金</option>
+                            <option value="7">攻其不备</option>
+                            <option value="8">重整旗鼓</option>
+                            <option value="9">不攻</option>
+                            <option value="10">始计</option>
+                            <option value="11">磐阵善守</option>
+                            <option value="12">反间</option>
+                            <option value="13">单骑救主</option>
+                            <option value="14">先驱突击</option>
+                            <option value="15">一夫当关</option>
+                            <option value="16">鸟云山兵</option>
+                            <option value="17">白刃</option>
+                            <option value="18">形兵之极</option>
+                            <option value="19">胜兵求战</option>
+                            <option value="20">锋矢</option>
+                            <option value="21">长兵方阵</option>
+                            </optgroup>
+                            <optgroup label="被动" id="category"></optgroup>
+                            <option value="22">步步为营</option>
+                            <option value="23">深谋远虑</option>
+                            <option value="24">健卒不殆</option>
+                            <option value="25">青囊秘要</option>
+                            <option value="26">回马</option>
+                            </optgroup>
+                            <optgroup label="主动" id="category"></optgroup>
+                            <option value="27">河内世泽</option>
+                            <option value="28">浑水摸鱼</option>
+                            <option value="29">一骑当千</option>
+                            <option value="30">十面埋伏</option>
+                            <option value="31">极火佐攻</option>
+                            <option value="32">绝水遏敌</option>
+                            <option value="33">人中吕布</option>
+                            <option value="34">焰焚箕轸</option>
+                            <option value="35">楚歌四起</option>
+                            <option value="36">掎角之势</option>
+                            <option value="37">雄兵破敌</option>
+                            <option value="38">折戟强攻</option>
+                            <option value="39">兼弱攻昧</option>
+                            <option value="40">伐谋</option>
+                            <option value="41">落雷</option>
+                            <option value="42">迷阵</option>
+                            </optgroup>
+                            </optgroup>
+                            <optgroup label="追击" id="category"></optgroup>
+                            <option value="43">温酒斩将</option>
+                            <option value="44">钝兵挫锐</option>
+                            <option value="45">怯心夺志</option>
+                            <option value="46">疾击其后</option>
+                            <option value="47">文伐</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </th>
+            </tr>
+        </thead>
+    </tbody>
+    <tfoot>
+    </tfoot>
+</table>
+<div>
+    <ul>
+        <li id="heropool">刘备</li>
+        <li id="heropool">曹操</li>
+        <li id="heropool">孙权</li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li id="skillpool">刘备</li>
+        <li id="skillpool">曹操</li>
+        <li id="skillpool">孙权</li>
+    </ul>
+</div>
